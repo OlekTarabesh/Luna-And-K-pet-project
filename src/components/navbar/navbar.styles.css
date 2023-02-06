@@ -20,7 +20,7 @@
     top: 31px;
     left: 112px;
     right: 249px;
-    background: url(../../icons/main-logo-Luna&K.svg) no-repeat;
+    cursor: pointer;
 }
 
 .navbar-ul {
@@ -37,6 +37,7 @@
 
 .navbar-li {
     list-style-type: none;
+    cursor: pointer;
 }
 
 .navbar-icons-container {
@@ -53,17 +54,17 @@
 .navbar-search {
     height: 30px;
     width: 50px;
-    background: url(../../icons/search.svg) no-repeat;
+    cursor: pointer;
 }
 
 .navbar-shop {
     height: 30px;
     width: 50px;
-    background: url(../../icons/shopping-cart.svg) no-repeat;
+    cursor: pointer;
 }
 
 .navbar-heart {
     height: 30px;
     width: 50px;
-    background: url(../../icons/heart.svg) no-repeat;
+    cursor: pointer;
 }
