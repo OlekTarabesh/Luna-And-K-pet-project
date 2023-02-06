@@ -1,0 +1,69 @@
+
+
+.navbar--wrapper {
+    /* width: 100%; */
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-logo {
+    display: block;
+    margin-top: 0;
+    padding: 0;
+    position: absolute;
+    display: flex;
+    width: 109px;
+    height: 32px;
+    top: 31px;
+    left: 112px;
+    right: 249px;
+    background: url(../../icons/main-logo-Luna&K.svg) no-repeat;
+}
+
+.navbar-ul {
+    position: absolute;
+    width: 450px;
+    display: block;
+    margin: 33px 450px 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.navbar-li {
+    list-style-type: none;
+}
+
+.navbar-icons-container {
+    display: block;
+    position: absolute;
+    margin: 29px 0 0 1100px;
+    padding: 0;
+    width: 250px;
+    height: 30px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar-search {
+    height: 30px;
+    width: 50px;
+    background: url(../../icons/search.svg) no-repeat;
+}
+
+.navbar-shop {
+    height: 30px;
+    width: 50px;
+    background: url(../../icons/shopping-cart.svg) no-repeat;
+}
+
+.navbar-heart {
+    height: 30px;
+    width: 50px;
+    background: url(../../icons/heart.svg) no-repeat;
+}
