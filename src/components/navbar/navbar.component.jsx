@@ -16,14 +16,16 @@ const Navbar = () => {
                     {/*li написать link*/}
                     {navigation.map((navigation) => {
                         return (
-                            <li className={navbarStyle.navbarLi}>{navigation.name}</li>
+                            <Link className={navbarStyle.navbarLi} to={`/${navigation.name}`}>
+                                {navigation.name}
+                            </Link>
                         )
                     })}
                 </ul>
                 <div className={navbarStyle.navbarIconsContainer}>
-                    <span>{navigation.map((navigation) => {
+                    <span>{navigation.map((nav) => {
                         return (
-                            <span className={navbarStyle.navbarIcons}>{navigation.icon}</span>
+                            <span className={navbarStyle.navbarIcons}>{nav.icon}</span>
                         )
                     })}
                     </span>
