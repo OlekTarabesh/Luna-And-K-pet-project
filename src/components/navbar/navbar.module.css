@@ -1,7 +1,4 @@
-
-
-.navbar--wrapper {
-    /* width: 100%; */
+.navbarWrapper {
     position: relative;
     margin: 0;
     padding: 0;
@@ -9,7 +6,7 @@
     justify-content: space-between;
     align-items: center;
 }
-.navbar-logo {
+.navbarLogo {
     display: block;
     margin-top: 0;
     padding: 0;
@@ -23,9 +20,10 @@
     cursor: pointer;
 }
 
-.navbar-ul {
-    position: absolute;
+.navbarUl {
+    display: block;
     width: 450px;
+    height: 21px;
     display: block;
     margin: 33px 450px 0;
     padding: 0;
@@ -35,12 +33,12 @@
     text-transform: uppercase;
 }
 
-.navbar-li {
+.navbarLi {
     list-style-type: none;
     cursor: pointer;
 }
 
-.navbar-icons-container {
+.navbarIconsContainer {
     display: block;
     position: absolute;
     margin: 29px 0 0 1100px;
@@ -51,19 +49,8 @@
     justify-content: flex-end;
 }
 
-.navbar-search {
-    height: 30px;
-    width: 50px;
-    cursor: pointer;
-}
-
-.navbar-shop {
-    height: 30px;
-    width: 50px;
-    cursor: pointer;
-}
-
-.navbar-heart {
+.navbarIcons {
+    margin-right: 43px;
     height: 30px;
     width: 50px;
     cursor: pointer;

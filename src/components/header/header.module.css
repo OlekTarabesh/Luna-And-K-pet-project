@@ -1,9 +1,9 @@
-.header-wrapper {
+.headerWrapper {
     position: relative;
     display: flex;
 }
 
-.star-svg {
+.starSvg {
     position: absolute;
     left: 1251px;
     top: 191px;

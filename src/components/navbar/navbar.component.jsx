@@ -1,33 +1,36 @@
-import './navbar.styles.css';
+import { Link, Outlet } from 'react-router-dom';
+import { header } from '../../data.js';
 import { MainLogo } from '../../icons/main-logo-Luna&K.jsx';
-import { SearchIcon } from '../../icons/search-icon.jsx';
-import { ShoppingCartIcon } from '../../icons/shopping-cart-icon.jsx';
-import { HeartIcon } from '../../icons/heart-icon';
-const Navbar = () => {
+import navbarStyle from './navbar.module.css';
 
+
+const Navbar = () => {
+    const { navigation } = header;
     return (
-            <div className="navbar-wrapper">
-                <a href className='navbar-logo'>
-                    <MainLogo className="navbar-logo" />
+        <>
+            <div className={navbarStyle.navbarWrapper}>
+                <a href='/' className={navbarStyle.navbarLogo}>
+                    <MainLogo className={navbarStyle.navbarLogo} />
                 </a>
-                <ul className='navbar-ul'>
-                    <li className='navbar-li'><a href>Catalog</a></li>
-                    <li className='navbar-li'><a href>About</a></li>
-                    <li className='navbar-li'><a href>delivery</a></li>
-                    <li className='navbar-li'><a href>contacts</a></li>
+                <ul className={navbarStyle.navbarUl}>
+                    {/*li написать link*/}
+                    {navigation.map((navigation) => {
+                        return (
+                            <li className={navbarStyle.navbarLi}>{navigation.name}</li>
+                        )
+                    })}
                 </ul>
-                <div className="navbar-icons-container">
-                    <a href className="navbar-search">
-                        <SearchIcon className="navbar-search" />
-                    </a>
-                    <a href className="navbar-shop">
-                        <ShoppingCartIcon className="navbar-shop" />
-                    </a>
-                    <a href className="navbar-heart" >
-                        <HeartIcon className="navbar-heart" />
-                    </a>
+                <div className={navbarStyle.navbarIconsContainer}>
+                    <span>{navigation.map((navigation) => {
+                        return (
+                            <span className={navbarStyle.navbarIcons}>{navigation.icon}</span>
+                        )
+                    })}
+                    </span>
                 </div>
             </div>
+            <Outlet />
+        </>
     )
 }
 

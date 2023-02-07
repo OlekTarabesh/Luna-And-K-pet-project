@@ -1,12 +1,12 @@
 import Navbar from "../navbar/navbar.component";
 import { StarIcon } from "../../icons/star-1-icon.jsx";
-import './header.styles.css';
+import headerStyle from './header.module.css';
 const Header = () => {
     
     return (
-        <div className="header-wrapper">
+        <div className={headerStyle.headerWrapper}>
             <Navbar />
-            <span className="star-svg">
+            <span className={headerStyle.starSvg}>
                 <StarIcon />
             </span>
         </div>
