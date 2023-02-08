@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
-import Header from './components/header/header.component';
+import MainPage from './components/main-page-component/main-page-component';
 import Catalog from './routes/catalog-component/catalog';
 import About from './routes/about-component/about.component';
 import Delivery from './routes/delivery-component/delivery.component';
@@ -9,7 +9,7 @@ import './App.css';
 function App() {
   return (
     <Routes >
-      <Route path='/' element={<Header />}/>
+      <Route path='/' element={<MainPage />}/>
       <Route path='/catalog' element={<Catalog />}/>
       <Route path='/about' element={<About />}/>
       <Route path='/delivery' element={<Delivery />}/>

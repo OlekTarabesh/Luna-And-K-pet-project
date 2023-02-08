@@ -2,6 +2,9 @@ import { HeartIcon } from "./icons/heart-icon";
 import { SearchIcon } from "./icons/search-icon";
 import { ShoppingCartIcon } from "./icons/shopping-cart-icon";
 
+//SECOND BLOCK
+
+
 export const header = {
     navigation: [
         {
@@ -22,3 +25,4 @@ export const header = {
 
     ]
 }
+
