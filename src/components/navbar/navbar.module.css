@@ -38,6 +38,7 @@
     cursor: pointer;
     text-decoration: none;
     color: #161616;
+    text-transform: uppercase;
 }
 
 .navbarIconsContainer {

@@ -5,19 +5,19 @@ import { ShoppingCartIcon } from "./icons/shopping-cart-icon";
 export const header = {
     navigation: [
         {
-            name: 'Catalog',
+            name: 'catalog',
             icon: <SearchIcon />
         },
         {
-            name: 'About',
+            name: 'about',
             icon: <ShoppingCartIcon />
         },
         {
-            name: 'Delivery',
+            name: 'delivery',
             icon: <HeartIcon />
         },
         {
-            name: 'Contacts',
+            name: 'contacts',
         },
 
     ]

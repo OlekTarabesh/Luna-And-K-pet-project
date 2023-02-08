@@ -6,5 +6,7 @@ html body {
   background-color: #FCF7F3;
   font-family: 'Cinzel', serif;;
 }
-
+:root {
+  --red-color: red;
+}
 
