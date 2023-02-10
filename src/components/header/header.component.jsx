@@ -1,5 +1,4 @@
 // import { Link } from "react-router-dom";
-import Navbar from "../navbar/navbar.component";
 import { StarIcon } from "../../icons/star-1-icon.jsx";
 import { ellipses } from '../../icons/ellipses/ellipse.data.js';
 import styled from './header.module.css';
@@ -10,7 +9,6 @@ const Header = () => {
         <>
             <div className={styled.headerWrapper}>
                 <div className={styled.headerContainer}>
-                    <Navbar />
                     <span className={styled.starSvg}>
                         <StarIcon />
                     </span>

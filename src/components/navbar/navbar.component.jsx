@@ -9,6 +9,7 @@ const Navbar = () => {
     const { navigation } = header;
     return (
         <Fragment>
+              
             <div className={styled.navbarWrapper}>
                 <a href='/' className={styled.navbarLogo}>
                     <MainLogo className={styled.navbarLogo} />

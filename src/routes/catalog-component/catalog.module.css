@@ -1,6 +1,74 @@
 
-.loremIpsum {
-    font-size: 100px;
-    font-weight: 800;
+.catalogWrapper {
+    height: 100%;
+    position: relative;
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
 
+}
+
+.title {
+    position: absolute;
+    top: 70px;
+    left: 641px;  
+    font-size: 36px;
+    font-weight: 400;  
+}
+
+.filter {
+    /* height: 24px; */
+    position: absolute;
+    top: 114px;
+    left: 112px;
+    font-family: 'Rubi', sans-serif;
+    font-size: 15px;
+}
+
+.filterArrow {
+    width: 21px;
+    position: absolute;
+    margin-left: 21px;
+}
+
+.categories {
+    position: absolute;
+    top: 120px;
+    left: 1218px;
+    font-family: 'Rubi', sans-serif;
+    font-size: 15px;
+}
+
+.starIcon {
+    width: 68px;
+    height: 68px;
+    position: absolute;
+    top: 203px;
+    left: 1342px;
+}
+
+.catalogContainer {
+    margin-top: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.catalogImage {
+    width: 392px;
+    height: 280px;
+    object-fit: cover;
+}
+
+.catalogPrice {
+    width: 392px;
+    height: 280px;
+}
+
+.catalogName {
+    width: 392px;
+    height: 280px;
 }
