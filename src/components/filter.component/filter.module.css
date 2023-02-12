@@ -1,0 +1,36 @@
+.filterWrapper {
+    width: 21px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filterWrapper:hover {
+    background-color:#EAE0D8;
+}
+
+.filter {
+    position: absolute;
+    top: 186px;
+    left: 112px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/* .filter:hover {
+    background-color:#EAE0D8;
+} */
+
+.filterArrow {
+    width: 21px;
+    position: absolute;
+    margin-left: 21px;
+    cursor: pointer;
+}
+
+/* .filterArrow:hover {
+    background-color:#EAE0D8;
+} */

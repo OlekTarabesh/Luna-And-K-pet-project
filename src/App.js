@@ -7,7 +7,7 @@ import Delivery from './routes/delivery-component/delivery.component';
 import Contacts from './routes/contacts-component/contacts.component';
 import './App.css';
 
-function App() {
+const App = () => {
   return (
     <Routes >
       <Route path='/' element={<Navbar />}>

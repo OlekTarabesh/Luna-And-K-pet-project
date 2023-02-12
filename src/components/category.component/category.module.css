@@ -1,0 +1,22 @@
+.categoryWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.category {
+    position: absolute;
+    top: 186px;
+    left: 1218px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.categoryArrow {
+    width: 21px;
+    position: absolute;
+    margin-left: 21px;
+    cursor: pointer;
+}
