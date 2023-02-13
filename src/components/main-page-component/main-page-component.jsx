@@ -1,6 +1,6 @@
 import { Fragment } from 'react';
 import Header from '../header/header.component';
-import SecondBlock from '../second-block/second-block';
+import Slider from '../slider-component/slider.component.jsx';
 // import styled from './main-page.module.css';
 
 
@@ -9,7 +9,7 @@ const MainPage = () => {
     return (
         <Fragment>
             <Header />
-            <SecondBlock />
+            <Slider />
         </Fragment>
     )
 }

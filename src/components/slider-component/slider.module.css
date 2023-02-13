@@ -1,0 +1,74 @@
+.titleAndArrows {
+    display: block;
+}
+
+.title {
+    display: block;
+    width: 300px;
+    height: 30px;
+    margin-left: 114px;
+    padding-top: 130px;
+    font-family: 'Cizel' serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #161616;
+    text-transform: uppercase;
+}
+
+.arrowLeft {
+    position: absolute;
+    width: 54px;
+    height: 41px;
+    margin-top: 29px;
+    left: 1157px;
+    cursor: pointer;
+}
+
+.arrowRight {
+    position: absolute;
+    width: 54px;
+    height: 41px;
+    margin-top: 29px;
+    left: 1271px;
+    cursor: pointer;
+}
+
+.sliderContainer {
+    width: 1194px;
+    height: 380px;
+    margin-top: 113px;
+    margin-left: 112px;
+    /* text-align: center; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.imageBlock {
+    width: 289px;
+    height: 280px;
+    overflow: hidden;
+}
+
+.sliderImage {
+    height: 100%;
+    width: 117%;
+    object-fit: cover;
+    
+}
+
+.sliderName {
+    display: block;
+    height: 24px;
+    margin-top: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 19px;
+}
+
+.sliderPrice {
+    display: block;
+    margin-top: 10px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+    color:black;
+}
