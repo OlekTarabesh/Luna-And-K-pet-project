@@ -1,0 +1,96 @@
+.title {
+    display: block;
+    width: 300px;
+    height: 30px;
+    margin-left: 114px;
+    padding-top: 130px;
+    font-family: 'Cizel' serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #161616;
+    text-transform: uppercase;
+}
+
+.wrapper {
+    /* width: 249%;*/
+    width: 1140px;
+    height: 433px;
+    margin-top: 75px;
+    margin-left: 153px;
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container {
+    /* width: 249%;*/
+    width: 286px;
+    height: 356px;
+    /* margin-top: 75px; */
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.products {
+    margin: 0 50px 0 49px;
+}
+
+.buttonContainer {
+    width: 180px;
+    height: 40px;
+    position: absolute;
+    top: 905px;
+    left: 1156px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttonL {
+    width: 70px;
+    height: 40px;
+    margin-right: 50px;
+    background: transparent;
+    border: none;
+}
+
+.buttonR {
+    width: 70px;
+    height: 40px;
+    margin-right: 50px;
+    background: transparent;
+    border: none;
+}
+
+.card {
+    width: 286px;
+    height: 356px;
+    /* margin: 0 2px 0; */
+}
+
+.image {
+    width: 292px;
+    height: 280px;
+    /* overflow: hidden; */
+    object-fit: cover;
+}
+
+.productName {
+    display: block;
+    height: 24px;
+    margin-top: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 19px;
+}
+
+.price {
+    display: block;
+    margin-top: 10px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+    color:black;
+}

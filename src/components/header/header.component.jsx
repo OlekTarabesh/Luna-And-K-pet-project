@@ -26,7 +26,7 @@ const Header = () => {
                                 <span className={styled.headerEllipse}>{i.icon}</span>
                             )     
                     })}
-                    <span className={styled.ellipseText}>Go to the catalog</span>
+                        <span className={styled.ellipseText}>Go to the catalog</span>
                     </span>
                 </div>
             </div>

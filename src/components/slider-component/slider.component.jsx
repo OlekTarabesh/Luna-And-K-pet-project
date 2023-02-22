@@ -1,28 +1,46 @@
-import { ArrowLeft } from '../../icons/arrows/arrow-left';
-import { ArrowRight } from '../../icons/arrows/arrow-right';
+import { useState } from 'react';
+
+import ArrowLeftBtn from '../arrow-left-button.component/arrow-left-button.jsx';
+import ArrowRightBtn from '../arrow-right-button/arrow-right-button.jsx';
 import { sliderDoc } from './slider.db.js';
 import styled from './slider.module.css';
 
 
 const Slider = () => {
-    const { item } = sliderDoc;
+    // const { item } = sliderDoc;
+
+    const [slideIndex, setSlideIndex] = useState(1);
+    const length = 4;
+
+    const nextProduct = () => {
+        const newSlideIndex = slideIndex + 1;
+            setSlideIndex(newSlideIndex >= length ? 0 : newSlideIndex);
+    }
+    
+    const prevProduct = () => {
+        const newSlideIndex = slideIndex - 1;
+        setSlideIndex(newSlideIndex < 0 ? length - 1 : newSlideIndex)
+    }
+
     return (
         <>
-            <div className={styled.titleAndArrows}>
-                <span className={styled.title}>bestsellers</span>
-                <span className={styled.arrowLeft}><ArrowLeft /></span>
-                <div className={styled.arrowRight}><ArrowRight /></div>
-            </div>
-
+            <span className={styled.title}>bestsellers</span>
             <div className={styled.sliderContainer}>
-                {item.map((i) => {
+                <ArrowRightBtn moveSlide={nextProduct}/>
+                <ArrowLeftBtn moveSlide={prevProduct}/>
+                {sliderDoc.map((i) => {
                     return (
-                        <div className={styled.sliderContent}>
-                            <div className={styled.imageBlock}>
-                                <img src={require('../../assets/catalog-jpeg/' + i.image + '.jpg')} alt="img" className={styled.sliderImage}/>
-                            </div>
-                                <span className={styled.sliderName}>{i.name}</span>
-                                <span className={styled.sliderPrice}>{i.price}</span>
+                        <div
+                        key={i.id}
+                        className={styled.productBlock}
+                        >
+                            <img 
+                                src={require('../../assets/catalog-jpeg/' + i.image + '.jpg')} 
+                                alt='img'
+                                className={styled.img} 
+                            />
+                            <span className={styled.productName}>{i.name}</span>
+                            <span className={styled.productPrice}>{i.price}</span>
                         </div>
                     )
                 })}

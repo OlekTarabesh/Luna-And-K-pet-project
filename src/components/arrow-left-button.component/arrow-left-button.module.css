@@ -1,0 +1,22 @@
+/* .arrowBtn {
+    position: absolute;
+    width: 54px;
+    height: 41px;
+    margin-top: 29px;
+    background: transparent;
+    border: none;
+    left: 1271px;
+    cursor: pointer;
+} */
+
+.arrowLeftBtn {
+    position: absolute;
+    width: 70px;
+    height: 60px;
+    /* margin-top: 29px; */
+    background: transparent;
+    border: none;
+    top: 916px;
+    left: 1157px;
+    cursor: pointer;
+}

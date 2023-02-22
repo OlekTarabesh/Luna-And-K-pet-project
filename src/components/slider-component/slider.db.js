@@ -1,6 +1,5 @@
 
-export const sliderDoc = {
-    item:[
+export const    sliderDoc = [
         {
             id: 1212,
             name: 'Plate kafel’',
@@ -19,5 +18,11 @@ export const sliderDoc = {
             price: '$ 85.00',
             image: 'fourth'
         },
+        {
+            id: 4545,
+            name: 'Tea - cup «Pollardi» collection',
+            price: '$ 1000.00',
+            image: 'second'
+        },
+        
     ]
-}
