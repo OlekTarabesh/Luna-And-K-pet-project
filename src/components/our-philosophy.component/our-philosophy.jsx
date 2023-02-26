@@ -14,8 +14,8 @@ const Philosophy = () => {
             <div className={styled.title}>our philosophy</div>
             <p className={styled.philosophyText}>
                 Our main slogan is ecological, beautiful and strong. Tableware made exclusively by natural materials, which  strong and long-term service. 
-            <br />
-            <br />
+                <br />
+                <br />
                 However, the dishes look incredibly elegant and elegant, necessarily fit into your interior. Our mission is to balance comfort and beauty.
             </p>
             <span className={styled.starSvg}><StarIcon /></span>
@@ -30,7 +30,6 @@ const Philosophy = () => {
                     className={styled.cupImg} />
                 <div className={styled.ellipsesContainer}>
                     {ellipse.map((el) => {
-                    
                         return (
                             <>
                                 <h2 className={styled.ellipseText}>Explore further</h2>
@@ -39,7 +38,6 @@ const Philosophy = () => {
                                 </span>
                             </>
                         )
-                    
                     })}
                 </div>
             </div>

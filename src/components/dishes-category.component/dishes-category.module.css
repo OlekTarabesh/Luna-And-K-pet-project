@@ -1,0 +1,55 @@
+.wrapper {
+    position: relative;
+    top: 350px;
+    width: 100%;
+    height: 699px;
+}
+
+
+.imgOrange {
+    position: absolute;
+    width: 289px;
+    height: 292px;
+    top: -96px;
+    left: 112px;
+}
+
+.forkAndKnife {
+    position: absolute;
+    width: 289px;
+    height: 229px;
+    top: 270px;
+    left: 215px;
+}
+
+.twoBlackSpoons {
+    position: absolute;
+    width: 407px;
+    height: 432px;
+    top: 4px;
+    left: 936px;
+}
+
+.caregory {
+    /* position: absolute;
+    top: 277px;
+    left: 661px; */
+    height: 49px;
+    width: auto;
+    margin-bottom: 60px;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.viewAllItems {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    line-height: 24px;
+    color: black;
+}

@@ -1,5 +1,7 @@
-.wrapper {
+.philosophyWrapper {
     position: relative;
+    /* width: 100%;*/
+    height: 500px; 
 
 }
 
@@ -8,7 +10,7 @@
     width: 300px;
     height: 30px;
     margin-left: 112px;
-    padding-top: 130px;
+    padding-top: 151px;
     font-family: 'Cizel' serif;
     font-weight: 400;
     font-size: 24px;
@@ -20,7 +22,7 @@
     position: absolute;
     width: 388px;
     height: 169px;
-    top: 1583px;
+    top: 200px;
     left: 112px;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
@@ -31,7 +33,7 @@
 
 .starSvg {
     position: absolute;
-    top: 1450px;
+    top: 101px;
     left: 527px;
 }
 
@@ -39,7 +41,7 @@
     position: absolute;
     width: 392px;
     height: 410px;
-    top: 1501px;
+    top: 152px;
     left: 627px;
 }
 
@@ -47,15 +49,15 @@
     position: absolute;
     width: 289px;
     height: 292px;
-    top: 1604px;
+    top: 255px;
     left: 1039px;
 }
 
 .ellipsesImgs {
     position: absolute;
-    top: 1900px;
+    top: 498px;
     left: 114px;
-    width: 226px;
+    width: 280px;
     height: 87px;
 }
 
@@ -63,7 +65,7 @@
     position: absolute;
     width: 200px;
     height: 24px;
-    top: 1918px;
+    top: 517px;
     left: 138px;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
