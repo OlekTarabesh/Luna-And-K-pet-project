@@ -16,7 +16,7 @@
     width: 1140px;
     height: 433px;
     margin-top: 75px;
-    margin-left: 153px;
+    margin-left: 133px;
     display: flex;
     /* flex-wrap: wrap; */
     justify-content: space-between;
@@ -44,7 +44,7 @@
     height: 40px;
     position: absolute;
     top: 905px;
-    left: 1156px;
+    left: 1084px;
     display: flex;
     justify-content: space-between;
 }
@@ -55,6 +55,7 @@
     margin-right: 50px;
     background: transparent;
     border: none;
+    cursor: pointer;
 }
 
 .buttonR {
@@ -63,6 +64,7 @@
     margin-right: 50px;
     background: transparent;
     border: none;
+    cursor: pointer;
 }
 
 .card {
