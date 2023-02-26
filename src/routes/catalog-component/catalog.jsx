@@ -4,14 +4,14 @@ import Category from '../../components/category.component/category.component.jsx
 // import { ArrowDown } from '../../icons/arrows/arrow-down/arrow-down.jsx';
 import { StarIcon } from '../../icons/star-1-icon.jsx';
 import { ellipses } from '../../icons/ellipses/ellipse.data.js';
-import { catalog } from './catalog.db.js';
+import { catalogDB } from './catalog.db.js';
 import styled from './catalog.module.css';
 
 
 
 const Catalog = () => {
     const { ellipse } = ellipses;
-    const { items } = catalog;
+    const { items } = catalogDB;
     return (
         <>
         <div className={styled.hrContainer}>

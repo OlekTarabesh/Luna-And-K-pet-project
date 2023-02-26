@@ -1,3 +1,4 @@
+import firebase from './firebase';
 import { initializeApp } from 'firebase/app';
 import {
     getFirestore,
@@ -16,7 +17,7 @@ const firebaseConfig = {
   };
   
   // Initialize Firebase
-  const firebaseApp = initializeApp(firebaseConfig);
+  firebase = initializeApp(firebaseConfig);
 
   export const db = getFirestore();
 
@@ -24,3 +25,5 @@ const firebaseConfig = {
     const LunaAndKDocRef = doc(db, 'products', productItem.uid);
     console.log(LunaAndKDocRef);
   }
+
+  export default firebase;

@@ -1,4 +1,4 @@
-export const catalog = {
+export const catalogDB = {
     items: [
         {
             name: 'Сutlery set kafel’ collection',

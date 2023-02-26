@@ -1,5 +1,3 @@
-
-
 import { StarIcon } from '../../icons/star-1-icon';
 import arrowR from '../../icons/arrows/arrow-right.svg';
 import {InstaImages} from './followInsta-db.js';
@@ -7,8 +5,7 @@ import styled from './followInsta.module.css';
 
 
 const FollowUsOnInstagram = () => {
-
-
+    
     return (
         <div className={styled.wrapper}>
             <span className={styled.starIcon}><StarIcon /></span>

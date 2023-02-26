@@ -1,0 +1,135 @@
+.wrapper {
+    position: relative;
+    width: 100%;
+    height: 450px;
+}
+
+.logo {
+    position: absolute;
+    top: 72px;
+    left: 112px;
+}
+
+.catalog {
+    position: absolute;
+    width: 104px;
+    height: 216px;
+    margin: 12px;
+    left: 374px;
+    top: 47px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+}
+
+.catalogTitle {
+    width: 76px;
+    height: 23px;
+    margin-bottom: 28px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.item {
+    width: 104px;
+    height: 216px;
+    margin-bottom: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    color: #6F6663;
+    cursor: pointer;
+}
+
+.info {
+    position: absolute;
+    width: 104px;
+    height: 216px;
+    margin: 12px;
+    left: 701px;
+    top: 47px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+}
+
+.infoTitle {
+    width: 76px;
+    height: 23px;
+    margin-bottom: 28px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.infoItem {
+    width: 165px;
+    height: 216px;
+    margin-bottom: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    color: #6F6663;
+    cursor: pointer;
+}
+
+.contacts {
+    position: absolute;
+    width: 104px;
+    height: 100px;
+    margin: 12px;
+    left: 1018px;
+    top: 47px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contactsTitle {
+    width: 76px;
+    height: 23px;
+    margin-bottom: 28px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.contactsItem {
+    width: 165px;
+    height: 70px;
+    margin-bottom: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    color: #6F6663;
+    cursor: pointer;
+}
+
+.iconsContainer {
+    display: block;
+    position: absolute;
+    width: 150px;
+    height: 29px;
+    display: flex;
+    top: 205px;
+    left: 1019px;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.icons {
+    width: 29px;
+    height: 29px;
+    cursor: pointer;
+}
+
+.starIcon svg {
+    position: absolute;
+    top: 317px;
+    left: 1326px;
+    cursor: pointer;
+}
