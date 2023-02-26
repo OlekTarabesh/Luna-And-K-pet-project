@@ -1,8 +1,8 @@
 .wrapper {
     position: relative;
-    top: 350px;
+    /* top: 350px; */
     width: 100%;
-    height: 699px;
+    height: 794px;
 }
 
 
@@ -10,7 +10,7 @@
     position: absolute;
     width: 289px;
     height: 292px;
-    top: -96px;
+    top: 135px;
     left: 112px;
 }
 
@@ -18,7 +18,7 @@
     position: absolute;
     width: 289px;
     height: 229px;
-    top: 270px;
+    top: 494px;
     left: 215px;
 }
 
@@ -26,8 +26,14 @@
     position: absolute;
     width: 407px;
     height: 432px;
-    top: 4px;
+    top: 230px;
     left: 936px;
+}
+
+.categoryContainer {
+    position: absolute;
+    top: 227px;
+    left: 610px;
 }
 
 .caregory {
@@ -43,7 +49,7 @@
     align-items:center;
 }
 
-.viewAllItems {
+.viewAllItemsContainer a {
     display: block;
     display: flex;
     justify-content: center;

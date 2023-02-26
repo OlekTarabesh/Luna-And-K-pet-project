@@ -22,15 +22,16 @@ const DishesCategory = () => {
                 src={require('../../assets/dishes-category/twoBlackSpoons.png')} 
                 alt="alt"
                 className={styled.twoBlackSpoons} />
-            {dishesCategory.map((d) => {
-                return (
-                   <div className={styled.caregory}>
-                    {d.item}
-                    
-                    </div> 
-                )
-            })}
-            <a href="#" className={styled.viewAllItems}>View all items</a>
+            <div className={styled.categoryContainer}>
+                {dishesCategory.map((d) => {
+                    return (
+                    <div className={styled.caregory}>
+                        {d.item}
+                        </div> 
+                    )
+                })}
+                <div className={styled.viewAllItemsContainer}><a href="catalog" className={styled.viewAllItems}>View all items</a></div>
+            </div>
         </div>
     )
 }
