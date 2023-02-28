@@ -33,18 +33,18 @@ export const header = {
     ]
 }
 
-export const catalog = {
-    items: [
-        {
-            name: 'Сutlery set kafel’ collection',
-            price: '$ 180.00',
-            image: 'first'
-        },
-        {
-            name: 'Tea - cup «Pollardi» collection',
-            price: '$ 280.00',
-            image: './assets/catalog-jpeg/2.jpg'
-        },
+// export const catalog = {
+//     items: [
+//         {
+//             name: 'Сutlery set kafel’ collection',
+//             price: '$ 180.00',
+//             image: 'first'
+//         },
+//         {
+//             name: 'Tea - cup «Pollardi» collection',
+//             price: '$ 280.00',
+//             image: './assets/catalog-jpeg/2.jpg'
+//         },
 //         {
 //             name: 'Dark mood tea-cup',
 //             price: '$ 50.00',
@@ -80,6 +80,6 @@ export const catalog = {
 //             price: '$ 180.00',
 //             image: <Catalog9 />
 //         },
-    ]
-}
+//     ]
+// }
 

@@ -1,4 +1,6 @@
-export const catalogDB = {
+const CATALOG_DATA = [
+    {
+    title: "products",    
     items: [
         {
             name: 'Сutlery set kafel’ collection',
@@ -47,3 +49,6 @@ export const catalogDB = {
         },
     ]
 }
+]
+
+export default CATALOG_DATA;

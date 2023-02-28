@@ -1,10 +1,11 @@
-import firebase from './firebase';
 import { initializeApp } from 'firebase/app';
 import {
     getFirestore,
     doc,
-    getDoc,
-    setDoc
+    // getDoc,
+    setDoc,
+    collection,
+    writeBatch
 } from 'firebase/firestore'
 
 const firebaseConfig = {
@@ -17,12 +18,29 @@ const firebaseConfig = {
   };
   
   // Initialize Firebase
-  firebase = initializeApp(firebaseConfig);
+  const firebase = initializeApp(firebaseConfig);
 
-  export const db = getFirestore();
+  export const db = getFirestore(firebase);
+
+  export const addCollectionAndDocuments = async (
+    collectionKey, 
+    objectsToAdd,
+    items 
+    ) => {
+    const collectionRef = collection(db, collectionKey);
+    const batch = writeBatch(db);
+    
+    objectsToAdd.forEach((object) => {
+       const docRef = doc(collectionRef, object[items].toLowerCase());
+       batch.set(docRef, object);
+    });
+  
+    await batch.commit();
+    console.log('done');
+  };
 
   export const createLunaAndKDocument = async (productItem) => {
-    const LunaAndKDocRef = doc(db, 'products', productItem.uid);
+    const LunaAndKDocRef = doc(db, 'products', productItem);
     console.log(LunaAndKDocRef);
   }
 
