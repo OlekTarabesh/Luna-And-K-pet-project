@@ -1,6 +1,6 @@
-const CATALOG_DATA = [
+export const CATALOG_DATA = 
     {
-    title: "products",    
+    // title: "products",    
     items: [
         {
             name: 'Сutlery set kafel’ collection',
@@ -49,6 +49,6 @@ const CATALOG_DATA = [
         },
     ]
 }
-]
 
-export default CATALOG_DATA;
+
+// export default CATALOG_DATA;
