@@ -22,7 +22,7 @@ export const sliderDoc = [
         id: 4545,
         name: 'Tea - cup «Pollardi» collection',
         price: '$ 1000.00',
-        image: 'second'
+        image: 'seventh'
     },
 
 
@@ -30,25 +30,12 @@ export const sliderDoc = [
         id: 5656,
         name: 'Plate kafel’',
         price: '$ 45.00',
-        image: 'sixth'
+        image: 'eighth'
     },
     {
         id: 6767,
         name: 'Tea - cup «Pollardi» collection',
         price: '$ 280.00',
-        image: 'second'
+        image: 'nineth'
     },
-    {
-        id: 7878,
-        name: 'Finlland glass',
-        price: '$ 85.00',
-        image: 'fourth'
-    },
-    {
-        id: 8989,
-        name: 'Tea - cup «Pollardi» collection',
-        price: '$ 1000.00',
-        image: 'second'
-    },
-    
 ]

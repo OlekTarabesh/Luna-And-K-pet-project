@@ -1,8 +1,8 @@
 import React from 'react';
 import { useEffect } from 'react';
-import { addCollectionAndDocuments } from '../../utils/firebase/firebase.js';
+import { getCollectionAndDocumenst } from '../../utils/firebase/firebase.js';
 
-import {CATALOG_DATA} from './catalog.db.js';
+import CATALOG_DATA from './catalog.db.js';
 import Filter from '../../components/filter.component/filter.component.jsx';
 import Category from '../../components/category.component/category.component.jsx';
 // import { ArrowDown } from '../../icons/arrows/arrow-down/arrow-down.jsx';
@@ -14,11 +14,15 @@ import styled from './catalog.module.css';
 
 const Catalog = () => {
     const { ellipse } = ellipses;
-    const { items } = CATALOG_DATA;
 
-    // useEffect(() => {
-    //     addCollectionAndDocuments('products', CATALOG_DATA)
-    // }, [])
+    
+    useEffect(() => {
+        const getProductsMap = async () => {
+            const productMap = await getCollectionAndDocumenst();
+            console.log(productMap);
+        }
+        getProductsMap();
+    }, [])
 
     return (
         <>
@@ -35,19 +39,19 @@ const Catalog = () => {
                 <div className={styled.ellipsesContainer}>
                     {ellipse.map((el) => {
                         return (
-                            <span className={styled.ellipses}>
+                            <span key={Math.random()} className={styled.ellipses}>
                                 <span className={styled.ellipsesText}>add to cart</span>
                                 {el.icon}
                             </span>
                         )
                     })}
                 </div>
-                {items.map((item) => {
+                {CATALOG_DATA.map((item) => {
                     return ( 
-                        <div className={styled.catalog}>
+                        <div key={Math.random()} className={styled.catalog}>
                             <span className={styled.catalogImageContainer}>
                             <img 
-                                src={require('../../assets/catalog-jpeg/' + item.image + '.jpg')}
+                                src={item.image}
                                 alt="catalog" 
                                 className={styled.catalogImage}
                                  />

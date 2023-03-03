@@ -16,7 +16,7 @@
     width: 1140px;
     height: 433px;
     margin-top: 75px;
-    margin-left: 133px;
+    margin-left: 150px;
     display: flex;
     /* flex-wrap: wrap; */
     justify-content: space-between;
@@ -36,7 +36,7 @@
 }
 
 .products {
-    margin: 0 50px 0 49px;
+    margin: 0 50px 0 52px;
 }
 
 .buttonContainer {

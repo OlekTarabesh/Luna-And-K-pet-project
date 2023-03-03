@@ -23,7 +23,7 @@ const Header = () => {
                     <span className={styled.headerEllipseContainer}>
                         {ellipse.map((i) => {
                             return (
-                                <span className={styled.headerEllipse}>{i.icon}</span>
+                                <span key={Math.random()} className={styled.headerEllipse}>{i.icon}</span>
                             )     
                     })}
                         <span className={styled.ellipseText}>Go to the catalog</span>

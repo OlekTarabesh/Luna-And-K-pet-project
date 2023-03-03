@@ -5,7 +5,9 @@ import {
     // getDoc,
     setDoc,
     collection,
-    writeBatch
+    writeBatch,
+    query,
+    getDocs
 } from 'firebase/firestore'
 
 const firebaseConfig = {
@@ -39,9 +41,22 @@ const firebaseConfig = {
     console.log('done');
   };
 
-  export const createLunaAndKDocument = async (productItem) => {
-    const LunaAndKDocRef = doc(db, 'products', productItem);
-    console.log(LunaAndKDocRef);
+  export const getCollectionAndDocumenst = async () => {
+    const collectionRef = collection(db, 'products');
+    const q = query(collectionRef);
+    const querySnapshot = await getDocs(q);
+    const productsMap = querySnapshot.docs.reduce((acc, docSnapshot) => {
+      const { title, items } = docSnapshot.data();
+      acc[title] = items;
+      return acc;
+    }, {});
+    
+    return productsMap;
   }
+
+  // export const createLunaAndKDocument = async (productItem) => {
+  //   const LunaAndKDocRef = doc(db, 'products', productItem);
+  //   console.log(LunaAndKDocRef);
+  // }
 
   export default firebase;

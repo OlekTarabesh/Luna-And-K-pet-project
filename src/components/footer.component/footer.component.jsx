@@ -17,21 +17,21 @@ const Footer = () => {
             <div className={styled.catalog}>
                 <h3 className={styled.catalogTitle}>Catalog</h3>
             {catalog.map(i => {
-                return <span className={styled.item}>{i.item}</span>
+                return <span key={Math.random()} className={styled.item}>{i.item}</span>
             })}
             </div>
             {/* Info section */}
             <div className={styled.info}>
                 <h3 className={styled.infoTitle}>Info</h3>
             {info.map(i => {
-                return <span className={styled.infoItem}>{i.item}</span>
+                return <span key={Math.random()} className={styled.infoItem}>{i.item}</span>
             })}
             </div>
             {/* Contacts section */}
             <div className={styled.contacts}>
                 <h3 className={styled.contactsTitle}>contacts</h3>
             {contacts.map(i => {
-                return <span className={styled.contactsItem}>{i.item}</span>
+                return <span key={Math.random()} className={styled.contactsItem}>{i.item}</span>
             })}
             </div>
             {/* Social Media section */}

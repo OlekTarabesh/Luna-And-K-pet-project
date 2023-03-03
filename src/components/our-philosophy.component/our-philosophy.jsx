@@ -1,3 +1,5 @@
+import { Fragment } from 'react';
+
 import { StarIcon } from '../../icons/star-1-icon';
 import { ellipses } from '../../icons/ellipses/ellipse.data';
 import styled from './our-philosophy.module.css';
@@ -31,12 +33,12 @@ const Philosophy = () => {
                 <div className={styled.ellipsesContainer}>
                     {ellipse.map((el) => {
                         return (
-                            <>
+                            <Fragment key={Math.random()}>
                                 <h2 className={styled.ellipseText}>Explore further</h2>
                                 <span className={styled.ellipsesImgs}>
                                     {el.icon}
                                 </span>
-                            </>
+                            </Fragment>
                         )
                     })}
                 </div>

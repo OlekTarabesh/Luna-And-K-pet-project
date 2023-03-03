@@ -1,7 +1,7 @@
 import { Fragment } from 'react';
 import Header from '../header/header.component';
 // import SecondSlider from '../SecondSlider/second-slider';
-import { Carousel } from '../SecondSlider/second-slider';
+import { Slider } from '../SecondSlider/slider';
 import Philosophy from '../our-philosophy.component/our-philosophy';
 import DishesCategory from '../dishes-category.component/dishes-category';
 import FollowUsOnInstagram from '../follow-us-on-instagram.component/followInsta';
@@ -15,7 +15,7 @@ const MainPage = () => {
     return (
         <Fragment>
             <Header />
-            <Carousel />
+            <Slider />
             <Philosophy />
             <DishesCategory />
             <FollowUsOnInstagram />

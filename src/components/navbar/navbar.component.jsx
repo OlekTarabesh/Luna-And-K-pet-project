@@ -17,7 +17,7 @@ const Navbar = () => {
                 <ul className={styled.navbarUl}>
                     {navigation.map((navigation) => {
                         return (
-                            <Link className={styled.navbarLi} to={`/${navigation.name}`}>
+                            <Link key={Math.random()} className={styled.navbarLi} to={`/${navigation.name}`}>
                                 {navigation.name}
                             </Link>
                         )
@@ -26,7 +26,7 @@ const Navbar = () => {
                 <div className={styled.navbarIconsContainer}>
                     <span>{navigation.map((nav) => {
                         return (
-                            <span className={styled.navbarIcons}>{nav.icon}</span>
+                            <span key={Math.random()} className={styled.navbarIcons}>{nav.icon}</span>
                         )
                     })}
                     </span>

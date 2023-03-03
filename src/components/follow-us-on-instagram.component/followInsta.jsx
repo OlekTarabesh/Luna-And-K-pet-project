@@ -23,6 +23,7 @@ const FollowUsOnInstagram = () => {
             <div className={styled.examplesContainer}>
                 {InstaImages.map((example) => (
                     <img 
+                        key={Math.random()}
                         src={require('../../assets/follow-us-on-instagram/' + example.image + '.png')} 
                         alt="alt" 
                         className={styled.examplesImg}/>

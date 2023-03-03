@@ -25,7 +25,7 @@ const DishesCategory = () => {
             <div className={styled.categoryContainer}>
                 {dishesCategory.map((d) => {
                     return (
-                    <div className={styled.caregory}>
+                    <div key={Math.random()} className={styled.caregory}>
                         {d.item}
                         </div> 
                     )
