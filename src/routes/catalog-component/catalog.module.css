@@ -99,10 +99,16 @@
     align-items: center;
 }
 
+
 .catalog {
     width: 392px;
     height: 280px;
+    transition: all .3s ease-in-out;
 }
+.catalog:hover {
+    transform: scale(1.03);
+}
+
 
 .catalogImageContainer {
     margin-bottom: 0 auto;
@@ -111,7 +117,9 @@
 .catalogImage {
     width: 392px;
     height: 280px;
+    cursor: pointer;
 }
+
 
 
 .catalogName {

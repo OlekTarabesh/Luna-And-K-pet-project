@@ -1,8 +1,8 @@
 import React from 'react';
-import { useEffect } from 'react';
-import { getCollectionAndDocumenst } from '../../utils/firebase/firebase.js';
+import { useState, useEffect, Fragment } from 'react';
+import { getCollectionAndDocuments } from '../../utils/firebase/firebase.js';
 
-import CATALOG_DATA from './catalog.db.js';
+// import CATALOG_DATA from './catalog.db.js';
 import Filter from '../../components/filter.component/filter.component.jsx';
 import Category from '../../components/category.component/category.component.jsx';
 // import { ArrowDown } from '../../icons/arrows/arrow-down/arrow-down.jsx';
@@ -14,15 +14,18 @@ import styled from './catalog.module.css';
 
 const Catalog = () => {
     const { ellipse } = ellipses;
+    const [ products, setProducts ] = useState([]);
 
-    
     useEffect(() => {
         const getProductsMap = async () => {
-            const productMap = await getCollectionAndDocumenst();
+            const productMap = await getCollectionAndDocuments();
             console.log(productMap);
-        }
+            setProducts(productMap);
+        };
         getProductsMap();
     }, [])
+    
+    // console.log(products.products);
 
     return (
         <>
@@ -46,22 +49,22 @@ const Catalog = () => {
                         )
                     })}
                 </div>
-                {CATALOG_DATA.map((item) => {
-                    return ( 
+                    <Fragment>
+                        {products.products?.map((item) => (
                         <div key={Math.random()} className={styled.catalog}>
                             <span className={styled.catalogImageContainer}>
                             <img 
-                                src={item.image}
+                                src={require('../../assets/catalog-jpeg/' + item.image + '.jpg')}
                                 alt="catalog" 
                                 className={styled.catalogImage}
-                                 />
+                                    />
                             </span>
                             <span className={styled.catalogName}>{item.name}</span>
                                 <br />
                             <span className={styled.catalogPrice}>{item.price}</span>
                         </div>
-                    )
-                })}
+                    ))}
+                    </Fragment>
             </div>
         </div>
         </>
@@ -72,5 +75,9 @@ const Catalog = () => {
 
 
 export default Catalog;
+
+
+
+
 
 

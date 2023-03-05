@@ -3,7 +3,7 @@ import {
     getFirestore,
     doc,
     // getDoc,
-    setDoc,
+    // setDoc,
     collection,
     writeBatch,
     query,
@@ -27,13 +27,13 @@ const firebaseConfig = {
   export const addCollectionAndDocuments = async (
     collectionKey, 
     objectsToAdd,
-    items 
+    title 
     ) => {
     const collectionRef = collection(db, collectionKey);
     const batch = writeBatch(db);
     
     objectsToAdd.forEach((object) => {
-       const docRef = doc(collectionRef, object[items].toLowerCase());
+       const docRef = doc(collectionRef, object[title].toLowerCase());
        batch.set(docRef, object);
     });
   
@@ -41,7 +41,7 @@ const firebaseConfig = {
     console.log('done');
   };
 
-  export const getCollectionAndDocumenst = async () => {
+  export const getCollectionAndDocuments = async () => {
     const collectionRef = collection(db, 'products');
     const q = query(collectionRef);
     const querySnapshot = await getDocs(q);
@@ -49,14 +49,9 @@ const firebaseConfig = {
       const { title, items } = docSnapshot.data();
       acc[title] = items;
       return acc;
-    }, {});
+    }, []);
     
     return productsMap;
   }
-
-  // export const createLunaAndKDocument = async (productItem) => {
-  //   const LunaAndKDocRef = doc(db, 'products', productItem);
-  //   console.log(LunaAndKDocRef);
-  // }
 
   export default firebase;
