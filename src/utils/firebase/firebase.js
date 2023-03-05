@@ -27,13 +27,12 @@ const firebaseConfig = {
   export const addCollectionAndDocuments = async (
     collectionKey, 
     objectsToAdd,
-    title 
     ) => {
     const collectionRef = collection(db, collectionKey);
     const batch = writeBatch(db);
     
     objectsToAdd.forEach((object) => {
-       const docRef = doc(collectionRef, object[title].toLowerCase());
+       const docRef = doc(collectionRef, object.title);
        batch.set(docRef, object);
     });
   

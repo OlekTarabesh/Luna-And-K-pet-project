@@ -1,6 +1,6 @@
 const CATALOG_DATA = [
         {
-        title: "Products",    
+        title: "products",    
         items: [
             {
                 name: 'Сutlery set kafel’ collection',
@@ -34,17 +34,17 @@ const CATALOG_DATA = [
             },
             {
                 name: 'Kettle English tea',
-                price: '$ 180.00',
+                price: '$ 150.00',
                 image: 'seventh'
             },
             {
                 name: 'Glass «lucent» collection',
-                price: '$ 180.00',
+                price: '$ 50.00',
                 image: 'eighth'
             },
             {
                 name: 'Сalyx set',
-                price: '$ 180.00',
+                price: '$ 110.00',
                 image: 'nineth'
             },
         ]

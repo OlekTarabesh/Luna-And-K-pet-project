@@ -91,7 +91,7 @@
 .catalogContainer {
     width: 1216px;
     height: 1208px;
-    margin-top: 189px;
+    margin-top: 232px;
     padding-bottom: 152px;
     display: flex;
     flex-wrap: wrap;
@@ -102,7 +102,7 @@
 
 .catalog {
     width: 392px;
-    height: 280px;
+    height: 420px;
     transition: all .3s ease-in-out;
 }
 .catalog:hover {
@@ -121,24 +121,55 @@
 }
 
 
-
 .catalogName {
     display: block;
-    /* height: 24px; */
     width: 392px;
     margin-top: 15px;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 19px;
     color:#8C8C8C;
-    
-
+    cursor: pointer;
+}
+.catalogName:hover {
+    text-decoration: underline;
 }
 
 .catalogPrice {
     display: block;
-    /* height: 24px; */
     font-family: 'Rubik', sans-serif;
     font-size: 15px;
     color:black;
+}
+
+.buttonContainer {
+    width: 340px;
+    height: 68px;
+    margin: 0 auto;
+    /* margin-top: 68px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttonL {
+    width: 54px;
+    height: 41px;
+    background: transparent;
+    border: none;
+    transition: all .1s ease-in-out;
+}
+.buttonL:hover {
+    transform: scale(1.2);
+}
+
+.buttonR {
+    width: 54px;
+    height: 41px;
+    background: transparent;
+    border: none;
+    transition: all .1s ease-in-out;
+}
+.buttonR:hover {
+    transform: scale(1.2);
 }

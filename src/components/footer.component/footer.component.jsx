@@ -12,6 +12,8 @@ const Footer = () => {
     
     return (
         <div className={styled.wrapper}>
+            <hr className={styled.hrLine}/>
+
             {/* Catalog section */}
             <span className={styled.logo}><MainLogo /></span>
             <div className={styled.catalog}>
@@ -55,8 +57,8 @@ const Footer = () => {
                         </a>
                 </span>
             </div>
-
             <span className={styled.starIcon}><StarIcon /></span>
+
         </div>
     )
 }

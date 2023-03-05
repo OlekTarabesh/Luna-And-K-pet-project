@@ -4,6 +4,14 @@
     height: 450px;
 }
 
+.hrLine {
+    width: 1214px;
+    height: 1px;
+    /* margin-top: 130px; */
+    border: 0;
+    background-color: #EAE0D8;
+}
+
 .logo {
     position: absolute;
     top: 72px;
@@ -127,9 +135,8 @@
     cursor: pointer;
 }
 
-.starIcon svg {
+.starIcon {
     position: absolute;
     top: 317px;
     left: 1326px;
-    cursor: pointer;
 }

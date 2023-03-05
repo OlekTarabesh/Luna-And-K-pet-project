@@ -24,12 +24,12 @@ const Navbar = () => {
                     })}
                 </ul>
                 <div className={styled.navbarIconsContainer}>
-                    <span>{navigation.map((nav) => {
+                    {navigation.map((nav) => {
                         return (
                             <span key={Math.random()} className={styled.navbarIcons}>{nav.icon}</span>
                         )
                     })}
-                    </span>
+                    
                 </div>
             </div>
             <Outlet />

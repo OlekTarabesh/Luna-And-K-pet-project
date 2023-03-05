@@ -1,5 +1,117 @@
-.aboutText {
-    font-size: 100px;
-    font-weight: 400;
-    color: red;
+.wrapper {
+    width: 100%;
+    height: 1527px;
+}
+
+.starIcon1 {
+    position: absolute;
+    left: 1251px;
+    top: 191px;
+    width: 68px;
+    height: 68px;
+}
+
+.starIcon2 {
+    position: absolute;
+    width: 68px;
+    height: 68px;
+    top: 768px;
+    left: 49px;
+}
+
+.title {
+    display: block;
+    width: 169px;
+    height: 49px;
+    margin: 70px 635.5px 50px;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-align: center;
+}
+
+.img1 {
+    position: absolute;
+    width: 401px;
+    height: 476px;
+    top: 260px;
+    left: 722px;
+}
+
+.img2 {
+    position: absolute;
+    width: 186px;
+    height: 187px;
+    top: 496px;
+    left: 1143px;
+}
+
+.descr1 {
+    position: absolute;
+    width: 461px;
+    height: 116px;
+    top: 353px;
+    left: 113px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 19px;
+    font-weight: 300;
+    color: #8C8C8C;
+    line-height: 28.5px;
+}
+
+.descr2 {
+    position: absolute;
+    width: 495px;
+    height: 116px;
+    top: 536px;
+    left: 113px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 19px;
+    font-weight: 300;
+    color: #8C8C8C;
+    line-height: 28.5px;
+}
+
+.philosophy {
+    position: absolute;
+    width: 304px;
+    height: 49px;
+    top: 867px;
+    left: 113px;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-align: center;
+}
+
+.woodenCutleryImg {
+    position: absolute;
+    width: 392px;
+    height: 410px;
+    top: 986px;
+    left: 113px;
+}
+
+.descr3 {
+    position: absolute;
+    width: 473px;
+    height: 116px;
+    top: 1045px;
+    left: 646px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 19px;
+    font-weight: 300;
+    color: #8C8C8C;
+    line-height: 28.5px;
+}
+
+.descr4 {
+    position: absolute;
+    width: 438px;
+    height: 116px;
+    top: 1220px;
+    left: 646px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 19px;
+    font-weight: 300;
+    color: #8C8C8C;
+    line-height: 28.5px;
 }

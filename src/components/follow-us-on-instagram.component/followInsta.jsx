@@ -29,7 +29,6 @@ const FollowUsOnInstagram = () => {
                         className={styled.examplesImg}/>
                 ))}
             </div>
-            <hr className={styled.hrLine}/>
         </div>
     )
 }
