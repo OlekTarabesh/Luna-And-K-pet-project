@@ -1,3 +1,21 @@
+.hrContainer {
+    display: block;
+    position: absolute;
+    padding-bottom: 70px;
+    top: 80px;
+    left: 112px;
+    bottom: 70px;
+}
+
+.hr {
+    display: block;
+    position: absolute;
+    width: 1153px;
+    height: 1px;
+    border: 0;
+    background-color: #EAE0D8;
+}
+
 .wrapper {
     width: 100%;
     height: 1527px;
@@ -23,7 +41,7 @@
     display: block;
     width: 169px;
     height: 49px;
-    margin: 70px 635.5px 50px;
+    margin: 105px 635.5px 50px;
     text-transform: uppercase;
     font-weight: 300;
     text-align: center;

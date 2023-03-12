@@ -2,6 +2,7 @@ import { useState } from 'react';
 
 import ArrowLeftBtn from '../arrow-left-button.component/arrow-left-button.jsx';
 import ArrowRightBtn from '../arrow-right-button/arrow-right-button.jsx';
+import ProgressBar from '../progress-bar/progress-bar.jsx';
 import { sliderDoc } from './slider.db.js';
 import styled from './slider.module.css';
 
@@ -24,7 +25,8 @@ const Slider = () => {
 
     return (
         <>
-            <span className={styled.title}>bestsellers</span>
+        <div><ProgressBar /></div>
+            <span className={styled.title} id='bestsellers'>bestsellers</span>
             <div className={styled.sliderContainer}>
                 <ArrowRightBtn moveSlide={nextProduct}/>
                 <ArrowLeftBtn moveSlide={prevProduct}/>

@@ -1,4 +1,4 @@
-import { Fragment } from 'react';
+// import { Fragment } from 'react';
 import Header from '../header/header.component';
 // import SecondSlider from '../SecondSlider/second-slider';
 import { Slider } from '../SecondSlider/slider';
@@ -7,21 +7,21 @@ import DishesCategory from '../dishes-category.component/dishes-category';
 import FollowUsOnInstagram from '../follow-us-on-instagram.component/followInsta';
 import Footer from '../footer.component/footer.component';
 // import Slider from '../slider-component/slider.component.jsx';
-// import styled from './main-page.module.css';
+import styled from './main-page.module.css';
 
 
 const MainPage = () => {
 
     return (
-        <Fragment>
-            <Header />
-            <Slider />
+        <div className={styled.mainPage}>
+            {/* <Header /> */}
+            {/* <Slider />
             <Philosophy />
             <DishesCategory />
             <FollowUsOnInstagram />
-            <Footer />
+            <Footer /> */}
             {/* <Slider /> */}
-        </Fragment>
+        </div>
     )
 }
 

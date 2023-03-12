@@ -2,6 +2,7 @@ import { Fragment } from 'react';
 
 import { StarIcon } from '../../icons/star-1-icon';
 import { ellipses } from '../../icons/ellipses/ellipse.data';
+import ProgressBar from '../progress-bar/progress-bar';
 import styled from './our-philosophy.module.css';
 
 
@@ -12,8 +13,10 @@ const Philosophy = () => {
     const { ellipse } = ellipses;
 
     return(
+        <>
+        <div className={styled.progressBar}><ProgressBar /></div>
         <div className={styled.philosophyWrapper}>
-            <div className={styled.title}>our philosophy</div>
+            <div className={styled.title} id='our_philosophy'>our philosophy</div>
             <p className={styled.philosophyText}>
                 Our main slogan is ecological, beautiful and strong. Tableware made exclusively by natural materials, which  strong and long-term service. 
                 <br />
@@ -44,6 +47,7 @@ const Philosophy = () => {
                 </div>
             </div>
         </div>
+        </>
     )
 }
 

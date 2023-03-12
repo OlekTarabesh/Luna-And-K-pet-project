@@ -12,6 +12,9 @@ const About = () => {
 
     return (
         <Fragment>
+            <div className={styled.hrContainer}>
+                <hr className={styled.hr} />
+            </div>
             <div className={styled.wrapper}>
                 <span className={styled.starIcon1}><StarIcon /></span>
                 <h1 className={styled.title}>About us</h1>

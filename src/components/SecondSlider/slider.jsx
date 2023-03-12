@@ -3,6 +3,7 @@ import { useRef, useEffect, useState } from 'react';
 import arrowL from '../../icons/arrows/arrow-left.svg';
 import arrowR from '../../icons/arrows/arrow-right.svg';
 import styled from './slider.module.css';
+import ProgressBar from '../progress-bar/progress-bar';
 import { sliderDoc } from './slider-data';
 
 
@@ -35,6 +36,7 @@ export const Slider = () => {
       
       return (
         <>
+        <ProgressBar />
         <div className={styled.title}>bestsellers</div>
         <div className={styled.wrapper}>
             <div current={current} className={styled.container} ref={ref}>
