@@ -10,25 +10,28 @@ const Header = () => {
     return (
         <>
             <div className={styled.headerWrapper}>
-                <div className={styled.headerContainer}>
+                {/* <div className={styled.headerContainer}>
                     <span className={styled.starSvg}>
                         <StarIcon />
                     </span>
-                </div>
+                </div> */}
                 
+                    <div className={styled.headerImage1Container}>
+                        <img src={headerImage1} alt='alt' className={styled.headerImage1} />
+                    </div> 
+                       <div className={styled.headerImage3Container}>
+                            <img src={headerImage2} alt='alt' className={styled.headerImage3} />
+                        </div>
                 <div className={styled.headerTitleWrapper}>
-                    <h2 className={styled.headerTitle}>Elegant tableware collection for your cosiness</h2>
-                
-                    <img src={headerImage1} alt='alt' className={styled.headerImage1} />
-                    <img src={headerImage2} alt='alt' className={styled.headerImage3} />
-                    <span className={styled.headerEllipseContainer}>
+                    {/* <h2 className={styled.headerTitle}>Elegant tableware collection for your cosiness</h2> */}
+                    {/* <span className={styled.headerEllipseContainer}>
                         {ellipse.map((i) => {
                             return (
                                 <span key={Math.random()} className={styled.headerEllipse}>{i.icon}</span>
-                            )     
-                    })}
-                        <span className={styled.ellipseText}>Go to the catalog</span>
-                    </span>
+                                )     
+                            })}
+                            <span className={styled.ellipseText}>Go to the catalog</span>
+                        </span> */}
                 </div>
             </div>
         </>

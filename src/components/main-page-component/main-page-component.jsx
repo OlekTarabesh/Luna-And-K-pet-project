@@ -14,7 +14,7 @@ const MainPage = () => {
 
     return (
         <div className={styled.mainPage}>
-            {/* <Header /> */}
+            <Header />
             {/* <Slider />
             <Philosophy />
             <DishesCategory />

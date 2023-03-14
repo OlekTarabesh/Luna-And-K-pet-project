@@ -9,7 +9,7 @@
     /* width: 70px; */
     /* height: 87px; */
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 601px) {
     .navBurgerWrapper {
         display: none;
     }
