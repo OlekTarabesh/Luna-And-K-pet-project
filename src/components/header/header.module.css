@@ -2,12 +2,7 @@
     width: 100%;
     height: 680px;
 }
-@media screen and (max-width: 375px) {
-    .headerWrapper {
-        width: 100%;
-        height: 680px;
-    }
-}
+
 
 .headerContainer {
     width: 100%;
@@ -24,58 +19,35 @@
 } */
 
 .headerTitleWrapper {
-    /* width: 366px;
-    height: 165px; */
-    /* margin: 176px 0 0 112px; */
+    width: 366px;
+    height: auto; 
+    margin: 0 auto;
 }
 
 .headerTitle {
     width: 100%;
-    height: 150px;
+    height: auto;
     font-weight: 400;
     font-size: 36px;
+    font-family: 'Cinzel', serif;
+    font-weight: 300;
     line-height: 50px;
+    margin-top: -400px;
+    margin-left: -440px;
 }
 
+
 .headerImage1Container {
-    /* display: table; */
     width: 473px;
     height: auto;
     margin: 0 auto;
     margin-top: 76px;
-    /* height: 522px;
-    margin-left: auto; */
-}
-@media screen and (max-width: 480px) {
-    .headerImage1Container {
-        width: 376px;
-        height: auto;
-    }
-} 
-
-@media screen and (max-width: 371px) {
-    .headerImage1Container {
-        width: 250px;
-        height: auto;
-        /* margin-left: 20px; */
-
-    }
-} 
-
-@media screen and (max-width: 301px) {
-    .headerImage1Container {
-        width: 250px;
-        height: auto;
-        margin-left: 45px;
-
-    }
 } 
 
 .headerImage1 {
     display: block;
-     width: 100%;
+    width: 100%;
     height: auto;
-    /* display: flex;  */
 }
 
 .headerImage3Container {
@@ -85,42 +57,33 @@
 }
 
 .headerImage3 {
-    /* position: absolute; */
     display: block;
     width: 100%;
     height: auto;
     margin-top: -355px;
     margin-left: 330px;
-
-}
-@media screen and (max-width: 952px) {
-    .headerImage3 {
-        display: none;
-    }
+    
 }
 
 .headerEllipseContainer {
     display: block;
-    margin-left: 115px;
     width: 226px;
-    height: 87px;
-    align-items: center;
+    height: auto;
+    margin: 0 auto;
 }
 
 .headerEllipse {
-    position: absolute;
-    top: 426px;
-    left: 112px;
-    width: 226px;
-    height: 87px;
+    width: 100%;
+    height: auto;
+    margin-top: 79px;
+    margin-left: -480px;
 }
 
-.ellipseText {
+.headerEllipseText {
     width: 193px;
     height: 24px;
-    position: absolute;
-    top: 460px;
-    left: 129px;
+    margin-top: -64px;
+    margin-left: -464px;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 19px;
@@ -129,33 +92,122 @@
     text-transform: uppercase;
 }
 
-@media screen and (max-width: 375px) {
-    .starSvg {
-        position: absolute;
-        left: 409px;
-        top: 156px;
-        width: 68px;
-        height: 68px;
+@media screen and (max-width: 1242px) {
+    .headerTitleWrapper {
+        width: 300px;
+        height: auto;
     }
-}
 
-
-@media (max-width: 375px) {
     .headerTitle {
-        display: none;
+        margin-left: -320px;
+    }
+
+    .headerEllipse {
+        margin-left: -360px;
+    }
+
+    .headerEllipseText {
+        margin-left: -345px;
     }
 }
 
-
-@media (max-width: 375px) {
+@media screen and (max-width: 952px) {
     .headerImage3 {
         display: none;
     }
-}
+    
+    .headerTitleWrapper {
+        width: 439px;
+        height: auto; 
+    }
 
-@media (max-width: 375px) {
-    .headerEllipseContainer {
+    .headerTitle {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 50px;
+        text-align: center;
+        line-height: 50px;
+    }
+
+    .headerEllipse {
+        display: none;
+    }
+
+    .headerEllipseText {
         display: none;
     }
 }
 
+
+@media screen and (max-width: 480px) {
+    .headerImage1Container {
+        width: 376px;
+        height: auto;
+        margin-top: 20px;
+    }
+} 
+
+@media screen and (max-width: 442px) {
+    .headerTitleWrapper {
+        width: 380px;
+        height: auto; 
+    }
+} 
+
+@media (max-width: 375px) {
+
+    .headerImage3 {
+        display: none;
+    }
+
+    .headerWrapper {
+        width: 100%;
+        height: 380px;
+    }
+
+    .headerTitle {
+        width: 380px;
+        height: auto; 
+        font-size: 33px;
+    }
+}
+
+@media screen and (max-width: 371px) {
+    .headerImage1Container {
+        width: 250px;
+        height: auto;
+    }
+
+    .headerTitleWrapper {
+        width: 100%;
+        height: auto;
+    }
+
+    .headerTitle {
+        width: 312px;
+        height: 150px;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+
+} 
+
+@media screen and (max-width: 301px) {
+    .headerImage1Container {
+        width: 250px;
+        height: auto;
+        margin-left: 45px;
+    }
+
+    .headerTitleWrapper {
+        width: 100%;
+        height: auto;
+    }
+
+    .headerTitle {
+        width: 312px;
+        height: 150px;
+        margin-left: 10px;
+    }
+}
