@@ -13,7 +13,7 @@ const Navbar = () => {
         <Fragment>
             <div className={styled.navbarWrapper}>
                 <div className={styled.navbarLogoContainer}>
-                    <a href='/'className={styled.navbarLogo} >
+                    <a href='/'className={styled.navbarLogo}>
                         <MainLogo />
                     </a>
                 </div>

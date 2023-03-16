@@ -42,7 +42,6 @@ const Burger = () => {
                 <button className={styled.closeBurger} onClick={burgerHandler}>
                     <span className={styled.spanClose1}></span>
                     <span className={styled.spanClose2}></span>
-                    {/* <span className={styled.spanClose3}></span> */}
                 </button>
                     {navigation.map((navigation) => {
                         return (

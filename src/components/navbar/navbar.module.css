@@ -3,7 +3,7 @@
 .navbarWrapper {
     width: 100%;
     height: 87px;
-    margin: 0;
+    /* padding: 10px 112px; */
     /* padding: 4px; */
     display: flex;
     justify-content: space-between;
@@ -11,33 +11,27 @@
 }
 
 .navbarLogoContainer {
-    box-sizing: border-box;
-    width: 321px;
-    /* height: 32px; */
-    margin-right: 10px;
-    /* margin-left: 112px; */
-    padding-top: 12px;
+    width: 230px;
+    height: auto;
     display: flex;
     justify-content: center;
-    text-align: center;
-    cursor: pointer;
+    align-items: center;
 }
 
 .navbarLogo {
     width: 100%;
     height: 32px;
-    margin-left: 112px;
+    padding:13px 0 0 112px;
 }
 
 .navContainer {
     width: 432px;
+    height: auto;
     margin: 0 20px;
 }
 
 .navbarUl {
-    /* box-sizing: border-box; */
     width: 100%;
-    margin: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -45,7 +39,7 @@
 }
 
 .navbarLi {
-    /* margin: 0 60px 0 4px; */
+    padding-right: 4px;
     list-style-type: none;
     cursor: pointer;
     text-decoration: none;
@@ -54,7 +48,7 @@
     text-transform: uppercase;
 }
 .navbarLi:last-child {
-    margin-right: 4px;
+    padding-right: 4px;
 }
 
 .navbarLi:hover {
@@ -65,7 +59,6 @@
     width: 152px;
     height: 24px;
     margin-right: 112px;
-    padding: 0;
     display: flex;
     justify-content: space-between;
 }
@@ -78,54 +71,74 @@
     cursor: pointer;
 }
 
-@media screen and (max-width: 840px) {
+ @media screen and (max-width: 1023px) {
+
+    .navbarLogo {
+        padding-left: 70px;
+    }
+
+    .navbarIconsContainer {
+        margin-right: 70px;
+    }
+} 
+
+@media screen and (max-width: 767px) {
     .navbarLogoContainer {
-        width: 150px;
+        width: 130px;
     }
 
     .navbarLogo {
+        width: 109px;
+        padding: 13px 0 0 0;
+    }
+
+    .navContainer {
         margin: 0;
     }
 
     .navbarIconsContainer {
-        margin: 0;
+        margin-right: 30px;
     }
-}
 
-@media screen and (max-width: 600px) {
+    .navbarLi {
+        padding-right: 5px;
+    }
+    .navbarLi:last-child {
+        padding-right: none;
+    }
+    
+} 
+
+@media screen and (max-width: 479px) {
+
+    .navbarLogoContainer {
+        width: 120px;
+        
+    }
+
+    .navbarLogo {
+        width: 100px;
+        padding: 13px 15px 0 20px;
+    }
+
+    .navbarUl {
+        display: none;
+    }
+
     .navbarWrapper {
-        /* width: 400px; */
-        margin: 0;
+        /* padding: 10px 20px; */
+    }
+
+    .navbarIconsContainer {
+        width: 150px;
+        padding: 0 0 0 25px;
     }
 
     .navContainer {
         display: none;
     }
+} 
 
-    .navbarIconsContainer {
-        width: 44%;
-        /* margin: 0; */
-        margin-right: 10px;
-    }
-
-    .navbarIcon {
-        margin-right: 30px;
-    }
-}
-
-@media screen and (max-width: 470px) {
-    .navbarIcon {
-        margin-right: 0px;
-    }
-}
-
-@media screen and (max-width: 301px) {
-    .navbarIcon {
-        margin-right: 20px;
-    }
-    .navbarIcon:last-child {
-        margin-right: 0;
-    }
-}
+ 
 
 

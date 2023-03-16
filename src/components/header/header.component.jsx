@@ -10,33 +10,32 @@ const Header = () => {
     const { ellipse } = ellipses;
     return (
         <>
-            <div className={styled.headerWrapper}>
-                {/* <div className={styled.headerContainer}>
+            {/* <div className={styled.headerWrapper}> */}
+                {/* <span className={styled.starSvgContainer}>
                     <span className={styled.starSvg}>
                         <StarIcon />
                     </span>
-                </div> */}
+                </span> */}
                 
-                    <div className={styled.headerImage1Container}>
-                        <img src={headerImage1} alt='alt' className={styled.headerImage1} />
-                    </div> 
-                       <div className={styled.headerImage3Container}>
-                            <img src={headerImage2} alt='alt' className={styled.headerImage3} />
+                {/* <div className={styled.headerTitleWrapper}>
+                    <div className={styled.headerTitle}>Elegant tableware collection for your cosiness</div>
+                </div> */}
+                    <div className={styled.container}>
+                        <div className={styled.headerTitle}>
+                            <div className={styled.title}>Elegant tableware collection for your cosiness</div>
                         </div>
-                <div className={styled.headerTitleWrapper}>
-                    <h2 className={styled.headerTitle}>Elegant tableware collection for your cosiness</h2>
-                </div>
-                    <div className={styled.headerEllipseContainer}>
+                        <div className={styled.headerImageOneContainer}>
+                            <img src={headerImage1} alt='alt' className={styled.headerImageOne} />
+                        </div>
+                       <div className={styled.headerImageTwoContainer}>
+                            <img src={headerImage2} alt='alt' className={styled.headerImageTwo} />
+                        </div>
+                    </div> 
+                    {/* <div className={styled.headerEllipseContainer}>
                         <img src={ellipseButton} alt="alt" className={styled.headerEllipse} />
                         <h2 className={styled.headerEllipseText}>Go to the catalog</h2>
-                        {/* {ellipse.map((i) => {
-                            return (
-                                <span key={Math.random()} className={styled.headerEllipse}>{i.icon}</span>
-                                )     
-                            })}
-                            <span className={styled.ellipseText}>Go to the catalog</span> */}
-                    </div>
-            </div>
+                    </div> */}
+            {/* </div> */}
         </>
     )
 }
