@@ -11,8 +11,12 @@
 }
 
 .navbarLogoContainer {
-    width: 230px;
-    height: auto;
+    box-sizing: border-box;
+    width: 321px;
+    /* height: 32px; */
+    margin-right: 10px;
+    /* margin-left: 112px; */
+    padding: 12px 0 0 112px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,7 +25,7 @@
 .navbarLogo {
     width: 100%;
     height: 32px;
-    padding:13px 0 0 112px;
+    /* margin-left: 112px; */
 }
 
 .navContainer {
@@ -58,7 +62,7 @@
 .navbarIconsContainer {
     width: 152px;
     height: 24px;
-    margin-right: 112px;
+    padding-right: 112px;
     display: flex;
     justify-content: space-between;
 }
@@ -71,60 +75,36 @@
     cursor: pointer;
 }
 
- @media screen and (max-width: 1023px) {
-
-    .navbarLogo {
-        padding-left: 70px;
+@media screen and (max-width: 1025px) {
+    .navbarLogoContainer {
+        width: 150px;
+        padding-left: 50px;
     }
 
     .navbarIconsContainer {
-        margin-right: 70px;
+        width: 152px;
+        height: 24px;
+        padding-right: 50px;
     }
-} 
+}
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 769px) {
     .navbarLogoContainer {
-        width: 130px;
+        width: 150px;
+        padding-left: 10px;
     }
 
-    .navbarLogo {
-        width: 109px;
-        padding: 13px 0 0 0;
+    .navbarIconsContainer {
+        padding: 0 10px 0 0;
     }
 
-    .navContainer {
+    /* .navbarLogo {
         margin: 0;
-    }
+    } */
 
-    .navbarIconsContainer {
-        margin-right: 30px;
-    }
+}
 
-    .navbarLi {
-        padding-right: 5px;
-    }
-    .navbarLi:last-child {
-        padding-right: none;
-    }
-    
-} 
-
-@media screen and (max-width: 479px) {
-
-    .navbarLogoContainer {
-        width: 120px;
-        
-    }
-
-    .navbarLogo {
-        width: 100px;
-        padding: 13px 15px 0 20px;
-    }
-
-    .navbarUl {
-        display: none;
-    }
-
+@media screen and (max-width: 600px) {
     .navbarWrapper {
         /* padding: 10px 20px; */
     }
@@ -137,7 +117,29 @@
     .navContainer {
         display: none;
     }
-} 
+
+    .navbarIconsContainer {
+        width: 44%;
+        /* margin: 0; */
+        margin-right: 10px;
+    }
+
+    .navbarIcon {
+        margin-right: 30px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .navbarIcon {
+        margin-right: 0px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .navbarWrapper {
+        width: 100%;
+    }
+}
 
  
 

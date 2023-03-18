@@ -1,7 +1,6 @@
 import { Fragment } from 'react';
 
 import { StarIcon } from '../../icons/star-1-icon';
-import { ellipses } from '../../icons/ellipses/ellipse.data';
 import ProgressBar from '../progress-bar/progress-bar';
 import styled from './our-philosophy.module.css';
 
@@ -9,9 +8,6 @@ import styled from './our-philosophy.module.css';
 
 const Philosophy = () => {
     
-    
-    const { ellipse } = ellipses;
-
     return(
         <>
         <div className={styled.progressBar}><ProgressBar /></div>
@@ -33,18 +29,6 @@ const Philosophy = () => {
                     src={require('../../assets/philosophy/cup.png')} 
                     alt="alt"
                     className={styled.cupImg} />
-                <div className={styled.ellipsesContainer}>
-                    {ellipse.map((el) => {
-                        return (
-                            <Fragment key={Math.random()}>
-                                <h2 className={styled.ellipseText}>Explore further</h2>
-                                <span className={styled.ellipsesImgs}>
-                                    {el.icon}
-                                </span>
-                            </Fragment>
-                        )
-                    })}
-                </div>
             </div>
         </div>
         </>
