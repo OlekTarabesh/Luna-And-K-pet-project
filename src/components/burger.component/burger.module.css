@@ -133,9 +133,9 @@
     /*  */
 }
 
-@media screen and (max-width: 470px) {
-    /* .burgerBtn {
-        margin-left: 15px;
-    } */
+@media screen and (max-width: 320px) {
+    .navBurgerWrapper {
+        width: 37px;
+    }
 }
 

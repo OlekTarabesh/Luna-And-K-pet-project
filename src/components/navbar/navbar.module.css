@@ -16,7 +16,7 @@
     /* height: 32px; */
     margin-right: 10px;
     /* margin-left: 112px; */
-    padding-top: 12px;
+    padding: 12px 0 0 112px;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -26,7 +26,7 @@
 .navbarLogo {
     width: 100%;
     height: 32px;
-    margin-left: 112px;
+    /* margin-left: 112px; */
 }
 
 .navContainer {
@@ -64,8 +64,7 @@
 .navbarIconsContainer {
     width: 152px;
     height: 24px;
-    margin-right: 112px;
-    padding: 0;
+    padding-right: 112px;
     display: flex;
     justify-content: space-between;
 }
@@ -78,18 +77,33 @@
     cursor: pointer;
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 1025px) {
     .navbarLogoContainer {
         width: 150px;
-    }
-
-    .navbarLogo {
-        margin: 0;
+        padding-left: 50px;
     }
 
     .navbarIconsContainer {
-        margin: 0;
+        width: 152px;
+        height: 24px;
+        padding-right: 50px;
     }
+}
+
+@media screen and (max-width: 769px) {
+    .navbarLogoContainer {
+        width: 150px;
+        padding-left: 10px;
+    }
+
+    .navbarIconsContainer {
+        padding: 0 10px 0 0;
+    }
+
+    /* .navbarLogo {
+        margin: 0;
+    } */
+
 }
 
 @media screen and (max-width: 600px) {
@@ -116,6 +130,12 @@
 @media screen and (max-width: 470px) {
     .navbarIcon {
         margin-right: 0px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .navbarWrapper {
+        width: 100%;
     }
 }
 
