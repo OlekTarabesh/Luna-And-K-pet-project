@@ -37,30 +37,38 @@ export const Slider = () => {
       return (
         <>
         <ProgressBar />
-        <div className={styled.title}>bestsellers</div>
-        <div className={styled.wrapper}>
-            <div current={current} className={styled.container} ref={ref}>
-              {sliderDoc.map((i) => (
-                <div key={Math.random()} className={styled.products}>
-                    <img 
-                        id={i.id}
-                        src={require('../../assets/catalog-jpeg/' + i.image + '.jpg')} 
-                        alt="alt" 
-                        className={styled.image} />
-                        <h4 className={styled.productName}>{i.name}</h4>
-                        <span className={styled.price}>{i.price}</span>
-                </div>
-              ))}
-              </div>
-          <div className={styled.buttonContainer}>
-            <button className={styled.buttonL} onClick={prev}>
-                <img src={arrowL} alt="alt" />
-            </button>
-            <button className={styled.buttonR} onClick={next}>
-                <img src={arrowR} alt="alt" />
-            </button>
+          <div className={styled.titleContainer}>
+            <div className={styled.title}>bestsellers</div>
           </div>
-        </div>
+
+            <div className={styled.buttonWrapper}>
+              <div className={styled.buttonContainer}>
+                  <button className={styled.buttonL} onClick={prev}>
+                      <img src={arrowL} alt="alt" />
+                  </button>
+                  <button className={styled.buttonR} onClick={next}>
+                      <img src={arrowR} alt="alt" />
+                  </button>
+              </div>
+            </div>
+
+          <div className={styled.wrapper}>
+            <div className={styled.sliderView}>
+              <div current={current} className={styled.productContainer} ref={ref}>
+                  {sliderDoc.map((i) => (
+                    <div key={Math.random()} className={styled.products}>
+                        <img 
+                            id={i.id}
+                            src={require('../../assets/catalog-jpeg/' + i.image + '.jpg')} 
+                            alt="alt" 
+                            className={styled.image} />
+                            <h4 className={styled.productName}>{i.name}</h4>
+                            <span className={styled.price}>{i.price}</span>
+                    </div>
+                  ))}
+              </div>
+            </div>
+          </div>
         </>
       )
     }
