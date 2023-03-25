@@ -1,45 +1,59 @@
 .wrapper {
-    position: relative;
-    /* top: 350px; */
     width: 100%;
-    height: 794px;
+    height: auto;
+    display: flex;
+
+}
+.container {
+    width: auto;
+    height: auto;
+    margin: 0 auto 0;
+    display: flex;
 }
 
+.firstBlockImgsContainer {
+    width: 505px;
+    height: 520px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 135px 0 0 0;
+}
 
-.imgOrange {
-    position: absolute;
+.orangeImgWrapp {
+    width: 100%;
+    height: auto;
+    padding: 0 0 0 112px;
+}
+
+.orangeImg {
+    display: block;
     width: 289px;
     height: 292px;
-    top: 135px;
-    left: 112px;
 }
 
-.forkAndKnife {
-    position: absolute;
+.forkAndKnifeImgWrapp {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 49px 0 0 215px;
+
+}
+
+.forkAndKnifeImg {
+    display: block;
     width: 289px;
     height: 229px;
-    top: 494px;
-    left: 215px;
+    
 }
 
-.twoBlackSpoons {
-    position: absolute;
-    width: 407px;
-    height: 432px;
-    top: 230px;
-    left: 936px;
-}
 
 .categoryContainer {
-    position: absolute;
-    top: 227px;
-    left: 610px;
+    width: 243px;
+    height: auto;
+    margin: 227px 0 0 103px;
 }
 
 .caregory {
-    /* position: absolute;
-    top: 277px;
-    left: 661px; */
     height: 49px;
     width: auto;
     margin-bottom: 60px;
@@ -47,6 +61,17 @@
     display: flex;
     justify-content: center;
     align-items:center;
+}
+
+.blackSpoonsContainer {
+    width: 407px;
+    height: 432px;
+    margin: 230px 0 0 86px;
+}
+
+.blackSpoonsImg {
+    width: 100%;
+    height: auto;
 }
 
 .viewAllItemsContainer a {
@@ -58,4 +83,50 @@
     font-weight: 300;
     line-height: 24px;
     color: black;
+}
+
+@media screen and (max-width: 1025px) {
+    .blackSpoonsContainer {
+        display: none;
+    }
+
+    .orangeImgWrapp {
+        width: 289px;
+        height: 292px;
+        padding: 0 0 0 10px;
+    }
+    
+    .forkAndKnifeImgWrapp {
+        width: 289px;
+        height: 292px;
+        padding: 49px 0 0 30px;
+    
+    }
+
+    .categoryContainer {
+        width: 243px;
+        height: auto;
+        margin: 227px 0 0 0;
+    }
+    
+}
+
+@media screen and (max-width: 769px) {
+    
+}
+
+
+@media screen and (max-width: 481px) {
+    .firstBlockImgsContainer {
+        display: none;
+    }
+
+    .orangeImgWrapp {
+        display: none;
+    }
+    
+    .forkAndKnifeImgWrapp {
+        display: none;
+    
+    }
 }

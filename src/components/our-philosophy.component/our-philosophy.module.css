@@ -1,21 +1,39 @@
-.progressBar {
+/* .progressBar {
     position: absolute;
     top: 1280px; 
+} */
+
+.supreme {
+
+    width: 100%;
+    height: auto; 
 }
 
-.philosophyWrapper {
-    position: relative;
-    /* width: 100%;*/
-    height: 593px; 
+.wrapper {
+    width: 100%;
+    height: auto; 
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.container {
+    width: 100%;
+    height: auto; 
+    margin: 130px 0 0 112px;
+    display: flex;
+    justify-content: center;
 }
 
 .title {
-    display: block;
-    width: 300px;
+    /* display: block; */
+    width: 217px;
     height: 30px;
-    margin-left: 112px;
-    padding-top: 151px;
+    margin: 130px 0 0 114px;
+    /* padding: 0 0 50px 0; */
+    /* display: flex;
+    justify-content: center; */
     font-family: 'Cizel' serif;
     font-weight: 400;
     font-size: 24px;
@@ -23,58 +41,175 @@
     text-transform: uppercase;
 }
 
-.philosophyText {
-    position: absolute;
-    width: 388px;
-    height: 169px;
-    top: 200px;
-    left: 112px;
+
+
+.descr {
+    width: 440px;
+    height: auto;
+    /* padding: 0 0 0 0; */
+    /* margin: 0 127px 0 112px; */
+}
+
+.text {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 0 30px 0;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 19px;
     line-height: 28px;
+    letter-spacing: 0.4px;
     color: #8C8C8C;
 }
 
-.starSvg {
-    position: absolute;
-    top: 101px;
-    left: 527px;
-}
-
-.woodenCutleryImg {
-    position: absolute;
-    width: 392px;
-    height: 410px;
-    top: 152px;
-    left: 627px;
-}
-
-.cupImg {
-    position: absolute;
-    width: 289px;
-    height: 292px;
-    top: 255px;
-    left: 1039px;
-}
-
-.ellipsesImgs {
-    position: absolute;
-    top: 498px;
-    left: 114px;
-    width: 280px;
-    height: 87px;
-}
-
-.ellipseText {
-    position: absolute;
-    width: 200px;
-    height: 24px;
-    top: 517px;
-    left: 138px;
+.textSecond {
+    display: block;
+    width: auto;
+    height: auto;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 19px;
-    text-transform: uppercase;
-    color: #6F6663;
+    line-height: 28px;
+    letter-spacing: 0.4px;
+    color: #8C8C8C;
+}
+
+/* .starSvg {
+    position: absolute;
+    top: 101px;
+    left: 527px;
+} */
+.imagesContainer {
+    width: 710px;
+    height: auto;
+    margin: -90px 0 0 0;
+    padding: 0 0 0 127px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.woodenCutleryImg {
+    width: 392px;
+    height: 410px;
+    margin: 0 0 0 0;
+}
+
+.cupImg {
+    width: 289px;
+    height: 292px;
+    padding: 103px 0 0 0;
+}
+
+.btnContainer, .btn, .btnImage  {
+    width: 231px;
+    height: auto;
+}
+
+.btnContainer {
+    margin: 38px 0 0 0;
+}
+
+.btn {
+    background: transparent;
+    border: none;
+}
+
+@media screen and (max-width: 1025px) {
+    .container {
+        width: 100%;
+        height: auto; 
+        margin: 130px 21px 0 112px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .title {
+        margin: 130px 0 0 152px;
+    }
+
+    .imagesContainer {
+        width: auto;
+        height: auto;
+        padding: 0 0 0 0;
+    }
+
+    .cupImg {
+        display: none;
+    }
+
+    .descr {
+        margin: 0 30px;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .descr {
+        margin: 0 5px;
+    }
+
+    .imagesContainer {
+        padding: 0 0 0 0;
+    }
+}
+
+
+@media screen and (max-width: 481px) {
+    .wrapper {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .title {
+        display: block;
+        width: 100%;
+        height: auto;
+        padding-top: 0px 0px 0px 0px;
+        margin: 121px  0 0 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        order: 1;
+    }
+
+    .imagesContainer {
+        margin: 30px 0 30px 0;
+        padding: 0px 0px 0px 0px;
+        order: 2;
+    }
+
+    .woodenCutleryImg {
+        display: block;
+        width: 400px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .descr {
+        width: 100%;
+        height: 168px;
+        margin: 0 30px 30px;
+        /* align-items: center; */
+        /* text-align: center; */
+        order: 3;
+    }
+
+
+    .btnContainer {
+        margin: 35px auto 0;
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+    }
+
 }

@@ -35,7 +35,7 @@ export const Slider = () => {
       }, [current]);
       
       return (
-        <>
+        <div className={styled.wrapper}>
         <ProgressBar />
           <div className={styled.titleContainer}>
             <div className={styled.title}>bestsellers</div>
@@ -52,24 +52,28 @@ export const Slider = () => {
               </div>
             </div>
 
-          <div className={styled.wrapper}>
+          <div className={styled.sliderWrapper}>
             <div className={styled.sliderView}>
+              <div className={styled.productWrapper}>
               <div current={current} className={styled.productContainer} ref={ref}>
                   {sliderDoc.map((i) => (
                     <div key={Math.random()} className={styled.products}>
-                        <img 
-                            id={i.id}
-                            src={require('../../assets/catalog-jpeg/' + i.image + '.jpg')} 
-                            alt="alt" 
-                            className={styled.image} />
+                        <div className={styled.imageContainer}>
+                          <img 
+                              id={i.id}
+                              src={require('../../assets/catalog-jpeg/' + i.image + '.jpg')} 
+                              alt="alt" 
+                              className={styled.image} />
+                        </div>
                             <h4 className={styled.productName}>{i.name}</h4>
                             <span className={styled.price}>{i.price}</span>
                     </div>
                   ))}
               </div>
+              </div>
             </div>
           </div>
-        </>
+        </div>
       )
     }
   

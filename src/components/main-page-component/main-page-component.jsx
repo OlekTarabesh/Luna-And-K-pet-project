@@ -15,10 +15,10 @@ const MainPage = () => {
     return (
         <div className={styled.mainPage}>
             <Header />
-             <Slider />
-           {/* <Philosophy />
+            <Slider />
+            <Philosophy />
             <DishesCategory />
-            <FollowUsOnInstagram />
+            {/* <FollowUsOnInstagram />
             <Footer /> */}
             {/* <Slider /> */}
         </div>
