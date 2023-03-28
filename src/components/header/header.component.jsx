@@ -21,25 +21,15 @@ const Header = () => {
                         <img src={headerImage1} alt='alt' className={styled.mainImage} />
                     </div>  
                     <div className={styled.sideImageContainer}>
+                    <div className={styled.svgStar}></div>
                         <img src={headerImage2} alt='alt' className={styled.sideImage} />
                     </div>
                 </header>
             </section>
+            
         </>
     )
 }
 
 export default Header;
 
-
-
-
-{/* <div className={styled.sideImageContainer}> */}
-{/* </div> */}
-
-
-{/* <div className={styled.headerContainer}>
-<span className={styled.starSvg}>
-        <StarIcon />
-        </span>
-    </div> */}
