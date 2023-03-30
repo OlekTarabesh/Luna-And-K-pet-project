@@ -1,18 +1,13 @@
-
 .hrContainer {
+    width: 100%;
+    padding: 0;
     display: block;
-    position: absolute;
-    padding-bottom: 70px;
-    top: 80px;
-    left: 112px;
-    bottom: 70px;
 }
 
 .hr {
-    display: block;
-    position: absolute;
-    width: 1153px;
+    width: 95%;
     height: 1px;
+    margin: 0 auto;
     border: 0;
     background-color: #EAE0D8;
 }

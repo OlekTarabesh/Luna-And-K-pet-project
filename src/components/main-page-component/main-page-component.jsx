@@ -18,8 +18,8 @@ const MainPage = () => {
             <Slider />
             <Philosophy />
             <DishesCategory />
-            {/* <FollowUsOnInstagram />
-            <Footer /> */}
+             {/* <FollowUsOnInstagram /> */}
+           {/* <Footer /> */}
             {/* <Slider /> */}
         </div>
     )

@@ -1,5 +1,5 @@
 import { Fragment } from 'react';
-import { StarIcon } from '../../icons/star-1-icon';
+// import { StarIcon } from '../../icons/star-1-icon';
 import aboutImage1 from '../../images/header-images/headerImg.png';
 import aboutImage2 from '../../images/header-images/headerImg2.png';
 import woodenCutleryImg from '../../images/woodenCutlery.png';
@@ -15,30 +15,49 @@ const About = () => {
             <div className={styled.hrContainer}>
                 <hr className={styled.hr} />
             </div>
+                    <div className={styled.titleContainer}>
+                        <h1 className={styled.title}>About us</h1>
+                    </div>
             <div className={styled.wrapper}>
-                <span className={styled.starIcon1}><StarIcon /></span>
-                <h1 className={styled.title}>About us</h1>
-                    <img src={aboutImage1} className={styled.img1} alt="alt" />
-                    <img src={aboutImage2} className={styled.img2} alt="alt" />
-                <span className={styled.descr1}>Luna & K - its a company that have 10 years of experience. We work from 2012 year . Our online shop aims to make it as easy as possible to buy goods and get a consultation without leaving the house and without spending a lot of time. 
-                </span>
+                <div className={styled.container}>
 
-                <span className={styled.descr2}>
-                We offer you to buy goods from our catalogue using convenient functionality. You can order from anywhere in the world. We want to improve and decorate your everyday life in the conditions of modern life. Also, we can guarantee the best quality of our dishes and the best quality of service, as we strive to remain at a high level
-                </span>
+                    <div className={styled.imgsAndDescrContainer}>
 
-                <span className={styled.starIcon2}><StarIcon /></span>
+                        <div className={styled.descrContainer}>
+                            <p className={styled.firstDescr}>
+                                Luna & K - its a company that have 10 years of experience. We work from 2012 year . Our online shop aims to make it as easy as possible to buy goods and get a consultation without leaving the house and without spending a lot of time. 
+                            </p>
 
-                <h1 className={styled.philosophy}>our philosophy</h1>
+                            <p className={styled.secondDescr}>
+                                We offer you to buy goods from our catalogue using convenient functionality. You can order from anywhere in the world. We want to improve and decorate your everyday life in the conditions of modern life. Also, we can guarantee the best quality of our dishes and the best quality of service, as we strive to remain at a high level
+                            </p>
+                        </div>
 
-                <img src={woodenCutleryImg} className={styled.woodenCutleryImg} alt="alt" />
+                        <div className={styled.firstImgsContainer}>
+                            <img src={aboutImage1} className={styled.mainImg} alt="alt" />
+                            <img src={aboutImage2} className={styled.secondImg} alt="alt" />
+                        </div>
+                    </div>
 
-                <span className={styled.descr3}>Our main slogan is ecological, beautiful and strong. Tableware made exclusively by natural materials, which  strong and long-term service. However, the dishes look incredibly elegant and elegant, necessarily fit into your interior. Our mission is to balance comfort and beauty.
-                </span>
+                        <div className={styled.philosophyTitleContainer}> 
+                            <h1 className={styled.philosophyTitle}>our philosophy</h1>
+                        </div>
+                    <div className={styled.philosophyContainer}>
 
-                <span className={styled.descr4}>
-                The quality of the materials and their temperature resistance are particularly noteworthy. Home is the most important place where it should be most pleasant to be. We designed the most pleasant and easy-to-use design. 
-                </span>
+                        <div className={styled.cutleryImgContainer}>
+                            <img src={woodenCutleryImg} className={styled.cutleryImg} alt="alt" />
+                        </div>
+                        <div className={styled.secondDescrContainer}>
+                            <p className={styled.thirdDescr}>
+                                Our main slogan is ecological, beautiful and strong. Tableware made exclusively by natural materials, which  strong and long-term service. However, the dishes look incredibly elegant and elegant, necessarily fit into your interior. Our mission is to balance comfort and beauty.
+                            </p>
+
+                            <p className={styled.fourthDescr}>
+                                The quality of the materials and their temperature resistance are particularly noteworthy. Home is the most important place where it should be most pleasant to be. We designed the most pleasant and easy-to-use design. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
             <Footer />
         </Fragment>
