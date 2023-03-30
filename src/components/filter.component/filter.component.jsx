@@ -3,7 +3,7 @@ import styled from './filter.module.css';
 const Filter = () => {
 
     return (
-        <div className="filterWrapper">
+        <div className={styled.filterWrapper}>
             <div className={styled.filter}>
                 Filter by
                 <span className={styled.filterArrow}>

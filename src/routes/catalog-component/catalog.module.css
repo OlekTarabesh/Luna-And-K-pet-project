@@ -12,21 +12,32 @@
     background-color: #EAE0D8;
 }
 
-.catalogWrapper {
-    display: block;
+.titleContainer {
     width: 100%;
-    height: 100%;
+    margin: 70px auto 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    /* width: 163px;
+    height: 49px;
+    margin: 70px auto 0; */
 }
 
 .title {
-    position: absolute;
-    top: 140px;
-    left: 641px;  
+    display: block;
     font-size: 36px;
+    margin: 0 10px;
     font-weight: 400;  
+}
+
+.wrapper {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 70px 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .starIcon {
@@ -45,41 +56,12 @@
     left: 31px;
 }
 
-.ellipsesContainer {
-    position: absolute;
-    width: 226px;
-    height: 87px;
-    margin: 0;
-    padding: 0;
-    display: block;
-    top: 811px;
-    left: 607px;
-    align-items: center;
-    
-}
-
-.ellipses {
-    position: absolute;
-    text-align: center;
-   
-}
-
-.ellipsesText {
-    position: absolute;
-    top: 35px;
-    left: 53px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    font-size: 19px;
-    color: #6F6663;
-    text-transform: uppercase;
-}
-
-.catalogContainer {
-    width: 1216px;
-    height: 1208px;
-    margin-top: 232px;
-    padding-bottom: 152px;
+.container {
+    width: 100%;
+    max-width: 1216px;
+    height: auto;
+    margin-top: 70px;
+    /* padding-bottom: 152px; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -132,7 +114,7 @@
 .buttonContainer {
     width: 340px;
     height: 68px;
-    margin: 0 auto;
+    margin: 50px auto 0;
     /* margin-top: 68px; */
     display: flex;
     justify-content: space-between;
@@ -160,3 +142,21 @@
 .buttonR:hover {
     transform: scale(1.2);
 }
+
+/* @media screen and (max-width: ) {
+    
+} */
+
+@media screen and (max-width: 1175px) {
+    .catalog {
+        margin: 0 auto;
+    }
+}
+
+/* @media screen and (max-width: ) {
+    
+}
+
+@media screen and (max-width: ) {
+    
+} */

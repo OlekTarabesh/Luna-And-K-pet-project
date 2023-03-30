@@ -46,7 +46,11 @@
     background: transparent;
     border: none;
     cursor: pointer;
+    transition: all .1s ease-in-out;
     /* display: flex; */
+}
+.ellipseBtn:hover {
+    transform: scale(1.05);
 }
 
 .ellipseBtnImage {

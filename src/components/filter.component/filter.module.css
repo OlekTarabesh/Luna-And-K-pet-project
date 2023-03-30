@@ -1,19 +1,15 @@
 .filterWrapper {
-    width: 21px;
+    width: 108px;
     height: 24px;
+    margin: 0 0 0 112px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.filterWrapper:hover {
-    background-color:#EAE0D8;
-}
-
 .filter {
-    position: absolute;
-    top: 186px;
-    left: 112px;
+    width: 100%;
+    height: auto;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 15px;
@@ -25,12 +21,14 @@
 } */
 
 .filterArrow {
+    /* display: block; */
     width: 21px;
-    position: absolute;
     margin-left: 21px;
     cursor: pointer;
 }
 
-/* .filterArrow:hover {
-    background-color:#EAE0D8;
-} */
+@media screen and (max-width: 769px) {
+    .filterWrapper {
+        margin: 0 0 0 20px;
+    }
+}

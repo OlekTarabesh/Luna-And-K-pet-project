@@ -1,13 +1,15 @@
 .categoryWrapper {
+    width: 108px;
+    height: 24px;
+    margin: 0 112px 0 0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .category {
-    position: absolute;
-    top: 186px;
-    left: 1218px;
+    width: 100%;
+    height: auto;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 15px;
@@ -16,7 +18,12 @@
 
 .categoryArrow {
     width: 21px;
-    position: absolute;
     margin-left: 21px;
     cursor: pointer;
+}
+
+@media screen and (max-width: 769px) {
+    .categoryWrapper {
+        margin: 0 20px 0 0;
+    }
 }

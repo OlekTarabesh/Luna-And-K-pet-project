@@ -21,7 +21,7 @@ const Header = () => {
                         <img src={headerImage1} alt='alt' className={styled.mainImage} />
                     </div>  
                     <div className={styled.sideImageContainer}>
-                    <div className={styled.svgStar}></div>
+                    {/* <div className={styled.svgStar}></div> */}
                         <img src={headerImage2} alt='alt' className={styled.sideImage} />
                     </div>
                 </header>

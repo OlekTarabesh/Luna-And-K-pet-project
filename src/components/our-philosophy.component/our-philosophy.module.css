@@ -114,6 +114,10 @@
 .btn {
     background: transparent;
     border: none;
+    transition: all .1s ease-in-out;
+}
+.btn:hover {
+    transform: scale(1.05);
 }
 
 @media screen and (max-width: 1025px) {
