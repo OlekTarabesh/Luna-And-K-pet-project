@@ -5,7 +5,7 @@ import { getCollectionAndDocuments } from '../../utils/firebase/firebase.js';
 
 import Filter from '../../components/filter.component/filter.component.jsx';
 import Category from '../../components/category.component/category.component.jsx';
-import { StarIcon } from '../../icons/star-1-icon.jsx';
+// import { StarIcon } from '../../icons/star-1-icon.jsx';
 // import { ellipses } from '../../icons/ellipses/ellipse.data.js';
 import arrowL from '../../icons/arrows/arrow-left.svg';
 import arrowR from '../../icons/arrows/arrow-right.svg';
@@ -28,7 +28,6 @@ const Catalog = () => {
     useEffect(() => {
         const getProductsMap = async () => {
             const productMap = await getCollectionAndDocuments();
-            // console.log(productMap);
             setProducts(productMap);
         };
         getProductsMap();

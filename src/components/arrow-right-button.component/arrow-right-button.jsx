@@ -2,20 +2,16 @@ import arrowRight from '../../icons/arrows/arrow-right.svg';
 import styled from './arrow-right-button.module.css';
     
 
-const ArrowRightBtn = ({next}) => {
+const ArrowRightBtn = ({onClick}) => {
         
-    console.log('nextProduct');
-
-
-
-
     return (
         <button 
-            onClick={next}
+            onClick={onClick}
             className={styled.arrowRightBtn}>
+                
             <img 
-            src={arrowRight}
-            alt="arrowR"
+                src={arrowRight}
+                alt="arrowR"
             />
         </button>
     )

@@ -1,14 +1,21 @@
 .wrapper {
-    position: relative;
     width: 100%;
-    height: 450px;
-    margin: 131px 0 0 0;
+    height: auto;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .hrContainer {
     width: 100%;
+    height: 1px;
+    margin: 131px 0 0 0;
     padding: 0;
-    display: block;
+    display: inline;
 }
 
 .hr {
@@ -19,11 +26,10 @@
     background-color: #EAE0D8;
 }
 
-.container {
+.content {
     width: 100%;
-    max-width: 1440px;
-    height: 448px;
-    margin: 67px auto 0;
+    height: auto;
+    margin: 67px 0 0 0;
     display: flex;
     justify-content: space-between;
 }
@@ -74,6 +80,9 @@
     cursor: pointer;
 }
 
+.item:hover {
+    text-decoration: underline;
+}
 .infoContainer {
     width: auto;
     height: auto;
@@ -89,8 +98,8 @@
 }
 
 .infoTitle {
-    width: 76px;
-    height: 23px;
+    width: auto;
+    height: auto;
     margin-bottom: 28px;
     font-size: 18px;
     text-transform: uppercase;
@@ -107,6 +116,9 @@
     font-size: 15px;
     color: #6F6663;
     cursor: pointer;
+}
+.infoItem:hover {
+    text-decoration: underline;
 }
 
 .contactsContainer {
@@ -142,6 +154,9 @@
     color: #6F6663;
     cursor: pointer;
 }
+.contactsItem:hover {
+    text-decoration: underline;
+}
 
 .iconsContainer {
     width: 150px;
@@ -156,6 +171,9 @@
     width: 29px;
     height: 29px;
     cursor: pointer;
+}
+.icons:hover {
+    opacity: 0.5;
 }
 
 .starIcon {
@@ -184,7 +202,7 @@
 
 @media screen and (max-width: 1025px) {
     .logoContainer {
-        margin: 0 100px 0 0;
+        margin: 0 25px 0 0;
     }
 
     .catalogContainer {
@@ -196,65 +214,51 @@
     }
 
     .contactsContainer {
-        margin: 0 100px 0 0;   
-    }
-}
-
-@media screen and (max-width: 769px) {
-    .catalogContainer {
-        margin: 0 70px 0 0;
-    }
-
-    .infoContainer {
-        margin: 0 35px 0 0;
-    }
-
-    .contactsContainer {
         margin: 0 50px 0 0;   
     }
 }
 
-
-@media screen and (max-width: 481px) {
-    .wrapper {
-        margin: 131px 0 0 0;
-    }
-
-    .container {
-        margin: 23px 0 0 0;
+@media screen and (max-width: 769px) {
+    .content {
+        display: flex;
         flex-wrap: wrap;
         justify-content: center;
+    } 
+
+    .catalogContainer {
+        width: auto;
+        order: 4;
+        margin: 0 auto;
+    }
+
+    .infoContainer {
+        width: auto;
+        margin: 0 auto;
+        order: 5;
     }
 
     .logoContainer {
-        width: 400px;
+        width: 100%;
         height: 20px;
         order: 1;
         margin: 0 auto;
         text-align: center;
     }
 
-    .logo {
-        width: auto;
-        margin: 0 auto;
-    }
-
     .contactsContainer {
-        width: 400px;
-        margin: 0;
+        width: 100%;
+        margin: 40px 5px 0 0;
         display: flex;
         flex-direction: column;
         order: 2;
     }
-
     .contactsTitle {
         display: none;
     }
 
     .iconsContainer {
         margin: 0 auto 18px;
-        order: 1;
-        
+        order: 1; 
     }
 
     .contacts {
@@ -263,17 +267,19 @@
         text-align: center;
         order: 2;
     }
+}
 
+
+@media screen and (max-width: 340px) {
     .catalogContainer {
-        width: auto;
-        margin-left: 45px;
-        order: 4;
+        width: 100%;
+        margin: 25px auto 0;
+        text-align: center;
     }
 
     .infoContainer {
-        width: auto;
-        margin-left: auto;
-        margin-right: 20px;
-        order: 5;
+        width: 100%;
+        margin: 25px auto 0;
+        text-align: center;
     }
 }

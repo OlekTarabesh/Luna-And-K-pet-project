@@ -5,13 +5,11 @@
     display: flex;
 }
 
-
-
 .container {
-    position: relative;
-    width: 1025px;
-    height: 512px;
-    margin: 57px 0 0 112px;
+    width: 100%;
+    height: auto;
+    margin: 46px 0 0 0;
+    /* margin: 0 auto; */
     display: flex;
 }
 
@@ -47,7 +45,6 @@
     border: none;
     cursor: pointer;
     transition: all .1s ease-in-out;
-    /* display: flex; */
 }
 .ellipseBtn:hover {
     transform: scale(1.05);
@@ -155,6 +152,9 @@
 }
 
 @media screen and (max-width: 769px) {
+    .wrapper {
+        height: fit-content;
+    }
     .container {
         height: 923px;
         flex-wrap: wrap;

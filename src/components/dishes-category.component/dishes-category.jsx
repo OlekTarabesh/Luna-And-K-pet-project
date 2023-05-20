@@ -1,18 +1,14 @@
-
-
 import { dishesCategory } from './db-dishes';
 import styled from './dishes-category.module.css';
 
 
 const DishesCategory = () => {
 
-    // const { dishes } = dishesCategory;
-
     return (
         <div className={styled.wrapper}>
             <div className={styled.container}>
 
-                <div className={styled.firstBlockImgsContainer}>
+                <div className={styled.imgsContainer}>
                     <div className={styled.orangeImgWrapp}>
                         <img 
                             src={require('../../assets/dishes-category/plateWithOrange.png')} 
@@ -32,10 +28,10 @@ const DishesCategory = () => {
                         return (
                         <div key={Math.random()} className={styled.caregory}>
                             {d.item}
-                            </div> 
+                        </div> 
                         )
                     })}
-                    <div className={styled.viewAllItemsContainer}><a href="catalog" className={styled.viewAllItems}>View all items</a></div>
+                    <div className={styled.linkContainer}><a href="catalog" className={styled.viewAllItems}>View all items</a></div>
                 </div>
 
                 <div className={styled.blackSpoonsContainer}>

@@ -14,13 +14,14 @@ const MainPage = () => {
 
     return (
         <div className={styled.mainPage}>
-            <Header />
-            <Slider />
-            <Philosophy />
-            <DishesCategory />
-             {/* <FollowUsOnInstagram /> */}
-           {/* <Footer /> */}
-            {/* <Slider /> */}
+            <div className={styled.content}>
+                <Header />
+                <Slider />
+                <Philosophy />
+                <DishesCategory />
+                <FollowUsOnInstagram />
+                <Footer />
+            </div>
         </div>
     )
 }

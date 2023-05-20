@@ -11,39 +11,46 @@ const Navbar = () => {
     const { navigation } = header;
     return (
         <Fragment>
-            <div className={styled.navbarWrapper}>
-                <div className={styled.navbarLogoContainer}>
-                    <a href='/'className={styled.navbarLogo}>
-                        <MainLogo />
-                    </a>
-                </div>
-                <nav className={styled.navContainer}>
-                    <ul className={styled.navbarUl}>
-                        {navigation.map((navigation) => {
+            <div className={styled.wrapper}>
+                <div className={styled.content}>
+                    <section className={styled.navbarLogoContainer}>
+                        <Link to='/'className={styled.navbarLogo}>
+                            <MainLogo />
+                        </Link>
+                    </section>
+
+                    <nav className={styled.navContainer}>
+                        <ul className={styled.navbarUl}>
+                            {navigation.map((navigation) => {
+                                return (
+                                    <Link key={Math.random()} className={styled.navbarLi} to={`/${navigation.name}`}>
+                                        {navigation.name}
+                                    </Link>
+                                )
+                            })}
+                        </ul>
+                    </nav>
+
+                    <section className={styled.navbarIconsContainer}>
+                        {navigation.map((nav) => {
                             return (
-                                <Link key={Math.random()} className={styled.navbarLi} to={`/${navigation.name}`}>
-                                    {navigation.name}
-                                </Link>
-                            )
-                        })}
-                    </ul>
-                </nav>
-                <div className={styled.navbarIconsContainer}>
-                    {navigation.map((nav) => {
-                        return (
-                            nav.icon ? (
-                                <div 
-                                key={Math.random()} 
-                                className={styled.navbarIcon}
-                                >
+                                nav.icon ? (
+                                    <div 
+                                        key={Math.random()} 
+                                        className={styled.navbarIcon}
+                                    >
                                         {nav.icon}
                                     </div>
-                                ) : null
+                                    ) : null
                                 ) 
                             })}
-                    
+                    </section>
+
+                    <section className={styled.burger}>
+                        <Burger />
+                    </section>
+
                 </div>
-                    <Burger />
             </div>
             <Outlet />
         </Fragment>
