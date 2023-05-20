@@ -1,7 +1,7 @@
-.categoryWrapper {
+.categoryContainer {
     width: 108px;
     height: 24px;
-    margin: 0 112px 0 0;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,10 +20,4 @@
     width: 21px;
     margin-left: 21px;
     cursor: pointer;
-}
-
-@media screen and (max-width: 769px) {
-    .categoryWrapper {
-        margin: 0 20px 0 0;
-    }
 }

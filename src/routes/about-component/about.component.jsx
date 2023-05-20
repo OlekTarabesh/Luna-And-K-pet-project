@@ -12,16 +12,18 @@ const About = () => {
 
     return (
         <Fragment>
-            <div className={styled.hrContainer}>
-                <hr className={styled.hr} />
-            </div>
-                    <div className={styled.titleContainer}>
-                        <h1 className={styled.title}>About us</h1>
-                    </div>
             <div className={styled.wrapper}>
+                <div className={styled.hrContainer}>
+                    <hr className={styled.hr} />
+                </div>
+
+                <div className={styled.titleContainer}>
+                    <div className={styled.title}>About us</div>
+                </div>
+                
                 <div className={styled.container}>
 
-                    <div className={styled.imgsAndDescrContainer}>
+                    <main className={styled.header}>
 
                         <div className={styled.descrContainer}>
                             <p className={styled.firstDescr}>
@@ -34,29 +36,34 @@ const About = () => {
                         </div>
 
                         <div className={styled.firstImgsContainer}>
-                            <img src={aboutImage1} className={styled.mainImg} alt="alt" />
-                            <img src={aboutImage2} className={styled.secondImg} alt="alt" />
+                           <div className={styled.mainImgContainer}><img src={aboutImage1} className={styled.mainImg} alt="alt" /></div>
+                           <div><img src={aboutImage2} className={styled.secondImg} alt="alt" /></div>
                         </div>
-                    </div>
+                    </main>
+                    {/* =========================================== */}
+                    <section className={styled.philSec}>
+                        
+                        <div className={styled.philSecTitleContainer}> 
+                            <h1 className={styled.philTitle}>our philosophy</h1>
+                        </div>
 
-                        <div className={styled.philosophyTitleContainer}> 
-                            <h1 className={styled.philosophyTitle}>our philosophy</h1>
-                        </div>
-                    <div className={styled.philosophyContainer}>
+                        <div className={styled.secondContainer}>
 
-                        <div className={styled.cutleryImgContainer}>
-                            <img src={woodenCutleryImg} className={styled.cutleryImg} alt="alt" />
-                        </div>
-                        <div className={styled.secondDescrContainer}>
-                            <p className={styled.thirdDescr}>
-                                Our main slogan is ecological, beautiful and strong. Tableware made exclusively by natural materials, which  strong and long-term service. However, the dishes look incredibly elegant and elegant, necessarily fit into your interior. Our mission is to balance comfort and beauty.
-                            </p>
+                            <div className={styled.cutleryImgContainer}>
+                                <img src={woodenCutleryImg} className={styled.cutleryImg} alt="alt" />
+                            </div>
 
-                            <p className={styled.fourthDescr}>
-                                The quality of the materials and their temperature resistance are particularly noteworthy. Home is the most important place where it should be most pleasant to be. We designed the most pleasant and easy-to-use design. 
-                            </p>
+                            <div className={styled.secondDescrContainer}>
+                                <p className={styled.thirdDescr}>
+                                    Our main slogan is ecological, beautiful and strong. Tableware made exclusively by natural materials, which  strong and long-term service. However, the dishes look incredibly elegant and elegant, necessarily fit into your interior. Our mission is to balance comfort and beauty.
+                                </p>
+
+                                <p className={styled.fourthDescr}>
+                                    The quality of the materials and their temperature resistance are particularly noteworthy. Home is the most important place where it should be most pleasant to be. We designed the most pleasant and easy-to-use design. 
+                                </p>
+                            </div>
                         </div>
-                    </div>
+                    </section>
                 </div>
             </div>
             <Footer />

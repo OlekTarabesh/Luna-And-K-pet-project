@@ -2,15 +2,17 @@ import { ArrowDown } from "../../icons/arrows/arrow-down/arrow-down"
 import styled from './category.module.css';
 
 
-const Category = () => {
+const Category = ({onClick}) => {
     
     return (
-        <div className={styled.categoryWrapper}>
-            <div className={styled.category}>
-                Category
-                <span className={styled.categoryArrow}>
-                    <ArrowDown />
-                </span> 
+        <div onClick={onClick}>
+            <div className={styled.categoryContainer}>
+                <div className={styled.category}>
+                    Category
+                    <span className={styled.categoryArrow}>
+                        <ArrowDown />
+                    </span> 
+                </div>
             </div>
         </div>
     )

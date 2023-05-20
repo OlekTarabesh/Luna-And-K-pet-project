@@ -1,7 +1,7 @@
-.filterWrapper {
+.filterContainer {
     width: 108px;
     height: 24px;
-    margin: 0 0 0 112px;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,19 +16,8 @@
     cursor: pointer;
 }
 
-/* .filter:hover {
-    background-color:#EAE0D8;
-} */
-
 .filterArrow {
-    /* display: block; */
     width: 21px;
     margin-left: 21px;
     cursor: pointer;
-}
-
-@media screen and (max-width: 769px) {
-    .filterWrapper {
-        margin: 0 0 0 20px;
-    }
 }
