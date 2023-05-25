@@ -1,4 +1,4 @@
-import arrowLeft from '../../icons/arrows/arrow-left.svg';
+import arrowLeft from '../../../icons/arrows/arrow-left.svg';
 import styled from './arrow-left-button.module.css';
 
 const ArrowLeftBtn = ({onClick}) => {

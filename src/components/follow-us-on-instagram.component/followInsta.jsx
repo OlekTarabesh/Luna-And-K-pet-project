@@ -1,5 +1,4 @@
-import { StarIcon } from '../../icons/star-1-icon';
-import ArrowRightBtn from '../arrow-right-button.component/arrow-right-button';
+import ArrowRightBtn from '../global-components/arrow-right-button.component/arrow-right-button';
 import {InstaImages} from './followInsta-db.js';
 import styled from './followInsta.module.css';
 
@@ -8,7 +7,6 @@ const FollowUsOnInstagram = () => {
     
     return (
         <div className={styled.wrapper}>
-            {/* <span className={styled.starIcon}><StarIcon /></span> */}
             <div className={styled.container}>
                 <div className={styled.titleAndLink}>
                 <span className={styled.title}>follow us on instagram</span> 

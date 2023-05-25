@@ -9,26 +9,17 @@
     width: 100%;
     height: auto;
     margin: 46px 0 0 0;
-    /* margin: 0 auto; */
     display: flex;
 }
 
-.svgStar {
-    display: inline-block;
-    width: 68px;
-    height: 68px;
-    margin-left: 400px;
-    background: url('../../icons/starIcon.png');
-}
-
 .titleAndBtnBlock {
-    width: 366px;
+    width: 381px;
     height: auto;
     padding: 0 15px 0 0;
 }
 
 .title {
-    width: 366px;
+    width: 100%;
     height: auto;
     padding: 85px 0 0 0;
     font-weight: 400;
@@ -62,9 +53,8 @@
 }
 
 .mainImage {
-    width: 455px;
+    width: 100%;
     height: auto;
-    /* padding: 0 0 0 15px; */
 }
 
 .sideImageContainer {
@@ -73,11 +63,6 @@
 }
 
 .sideImage {
-    /* position: absolute;
-    left: 906px;
-    top: 296px;
-    width: 289px;
-    height: 292px; */
     display: block;
     width: 289px;
     height: auto;
@@ -142,7 +127,6 @@
         width: 350px;
         height: auto;
         padding: 0 15px 0 20px;
-        /* display: none; */
     }
     
     .mainImageContainer {
@@ -170,7 +154,6 @@
         width: 100%;
         justify-content: center;
         align-items: center;
-        /* display: none; */
     }
 
     .title {
@@ -196,7 +179,6 @@
         height: auto;
         flex-wrap: wrap;
         margin: 15px 0 0 0;
-        /* padding: 0 10px; */
     }
 
     .mainImageContainer {
@@ -242,7 +224,6 @@
         height: auto;
         flex-wrap: wrap;
         margin: 15px 0 0 0;
-        /* padding: 0 10px; */
     }
 
     .mainImageContainer {

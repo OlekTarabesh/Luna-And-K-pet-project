@@ -1,4 +1,4 @@
-import arrowRight from '../../icons/arrows/arrow-right.svg';
+import arrowRight from '../../../icons/arrows/arrow-right.svg';
 import styled from './arrow-right-button.module.css';
     
 

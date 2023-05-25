@@ -30,14 +30,18 @@ const Philosophy = () => {
                     </section>
                     
                     <section className={styled.imagesContainer}>
+                        <div className={styled.woodenContainer}>
                             <img 
                                 src={require('../../assets/philosophy/wooden-cutlery.png')} 
                                 alt="alt" 
                                 className={styled.woodenCutleryImg}/>
+                        </div>
+                        <div className={styled.cupImgContainer}>
                             <img 
                                 src={require('../../assets/philosophy/cup.png')} 
                                 alt="alt"
                                 className={styled.cupImg} />
+                        </div>
                     </section>
                 </div>   
             </div>

@@ -3,13 +3,13 @@ import { useState, useEffect, Fragment } from 'react';
 
 import { getCollectionAndDocuments } from '../../utils/firebase/firebase.js';
 
-import Filter from '../../components/filter.component/filter.component.jsx';
-import Category from '../../components/category.component/category.component.jsx';
-import arrowL from '../../icons/arrows/arrow-left.svg';
-import arrowR from '../../icons/arrows/arrow-right.svg';
+import Filter from '../../components/global-components/filter.component/filter.component.jsx';
+import Category from '../../components/global-components/category.component/category.component.jsx';
 import Footer from '../../components/footer.component/footer.component.jsx';
-import styled from './catalog.module.css';
+import ArrowLeftBtn from '../../components/global-components/arrow-left-button.component/arrow-left-button.jsx';
+import ArrowRightBtn from '../../components/global-components/arrow-right-button.component/arrow-right-button.jsx';
 
+import styled from './catalog.module.css';
 
 
 const Catalog = () => {
@@ -69,9 +69,9 @@ const Catalog = () => {
                 ))}
                 </div>
                         <div className={styled.buttonContainer}>
-                            <button className={styled.buttonL}><img src={arrowL} alt='alt'/></button>
+                            <ArrowLeftBtn />
                             1   2  ...   3   4
-                            <button className={styled.buttonR}><img src={arrowR} alt='alt'/></button>
+                            <ArrowRightBtn />
                         </div>
             </div>
 

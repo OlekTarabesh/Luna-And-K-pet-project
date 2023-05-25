@@ -1,13 +1,13 @@
 import { useRef, useEffect, useState } from 'react';
 
-import ArrowLeftBtn from '../arrow-left-button.component/arrow-left-button'
-import ArrowRightBtn from '../arrow-right-button.component/arrow-right-button';
+import ArrowLeftBtn from '../global-components/arrow-left-button.component/arrow-left-button'
+import ArrowRightBtn from '../global-components/arrow-right-button.component/arrow-right-button';
 import styled from './slider.module.css';
 
 import { sliderDoc } from './slider-data';
 
 
-export const Slider = () => {
+const Slider = () => {
 
     const TOTAL_SLIDES = sliderDoc.length;
   
@@ -16,7 +16,7 @@ export const Slider = () => {
       const ref = useRef(null);
       
       const next = () => {
-        if ( current + 2 < TOTAL_SLIDES ) {
+        if ( current + 2 < TOTAL_SLIDES) {
           return setCurrent(current + 1);
         }
         return setCurrent(1);
@@ -29,12 +29,8 @@ export const Slider = () => {
         }
         return setCurrent(current - 1);
       }
-      // `${410}px`
+      
       useEffect(() => {
-        ref.current.style.margin = '5px 0 0 5px';
-        ref.current.style.display = 'flex';
-        ref.current.style.width = `${410}px`;
-        ref.current.style.transition = 'all 1s ease-in-out';
         ref.current.style.transform = `translateX(-${current - 1}00%)`;
       }, [current]);
       
@@ -58,10 +54,10 @@ export const Slider = () => {
             <section className={styled.sliderWrapper}>
               <div className={styled.sliderView}>
                   <div current={current} ref={ref} 
-                  // className={styled.productContainer}
+                  className={styled.productContainer}
                   >
                       {sliderDoc.map((i) => (
-                        <div key={Math.random()} className={styled.products}>
+                        <div key={Math.random()} className={styled.card}>
                             <div className={styled.imageContainer}>
                               <img 
                                   id={i.id}
@@ -80,3 +76,4 @@ export const Slider = () => {
       )
     }
   
+export default Slider;

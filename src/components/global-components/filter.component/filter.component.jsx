@@ -1,4 +1,4 @@
-import { ArrowDown } from "../../icons/arrows/arrow-down/arrow-down"
+import { ArrowDown } from "../../../icons/arrows/arrow-down/arrow-down"
 import styled from './filter.module.css';
 
 const Filter = ({onClick}) => {

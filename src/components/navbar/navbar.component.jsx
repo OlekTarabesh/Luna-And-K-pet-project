@@ -1,9 +1,10 @@
 import { Fragment } from 'react';
 import { Link, Outlet } from 'react-router-dom';
 
-import Burger from '../burger.component/burger.jsx';
+import Burger from './burger.component/burger.jsx';
 import { header } from '../../data.js';
 import { MainLogo } from '../../icons/main-logo-Luna&K.jsx';
+
 import styled from './navbar.module.css';
 
 

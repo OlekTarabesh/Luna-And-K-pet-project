@@ -1,5 +1,4 @@
 import { Fragment } from 'react';
-// import { Link } from "react-router-dom";
 import headerImage1 from '../../images/header-images/headerImg.png';
 import headerImage2 from '../../images/header-images/headerImg2.png';
 import ellipseBtn from '../../icons/ellipses/headerEllipseBtn.png';

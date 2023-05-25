@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { header } from '../../data.js';
+import { header } from '../../../data.js';
 import styled from './burger.module.css';
 
 const Burger = () => {

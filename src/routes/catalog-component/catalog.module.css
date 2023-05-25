@@ -163,4 +163,8 @@
         height: auto;
         margin-bottom: 0 auto;
     }
+
+    .buttonContainer {
+        justify-content: space-around;
+    }
 }
