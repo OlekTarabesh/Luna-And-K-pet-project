@@ -1,0 +1,60 @@
+
+.infoContainer {
+    width: auto;
+    height: auto;
+    margin: 0 177px 0 0;
+}
+
+.info {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+}
+
+.infoTitle {
+    width: auto;
+    height: auto;
+    margin-bottom: 28px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.infoItem {
+    width: auto;
+    height: auto;
+    margin-bottom: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    color: #6F6663;
+    cursor: pointer;
+}
+.infoItem:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1025px) {
+    .infoContainer {
+        margin: 0 80px 0 0;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .infoContainer {
+        width: auto;
+        margin: 0 auto;
+        order: 5;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .infoContainer {
+        width: 100%;
+        margin: 25px auto 0;
+        text-align: center;
+    }
+}

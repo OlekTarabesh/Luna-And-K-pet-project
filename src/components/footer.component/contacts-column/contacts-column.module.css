@@ -1,0 +1,91 @@
+.contactsContainer {
+    width: auto;
+    height: auto;
+}
+
+.contacts {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contactsTitle {
+    width: 76px;
+    height: 23px;
+    margin-bottom: 28px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.contactsItem {
+    width: 165px;
+    height: auto;
+    margin-bottom: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    color: #6F6663;
+    cursor: pointer;
+}
+.contactsItem:hover {
+    text-decoration: underline;
+}
+
+.iconsContainer {
+    width: 150px;
+    height: 29px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.icons {
+    display: block;
+    width: 29px;
+    height: 29px;
+    cursor: pointer;
+}
+.icons:hover {
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 1440px) {
+    .contactsContainer {
+        margin: 0 0 0 0;   
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    .contactsContainer {
+        margin: 0 50px 0 0;   
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .contactsContainer {
+        width: 100%;
+        margin: 40px 5px 0 0;
+        display: flex;
+        flex-direction: column;
+        order: 2;
+    }
+    .contactsTitle {
+        display: none;
+    }
+
+    .iconsContainer {
+        margin: 0 auto 18px;
+        order: 1; 
+    }
+
+    .contacts {
+        width: 164px;
+        margin: 0 auto;
+        text-align: center;
+        order: 2;
+    }
+}
