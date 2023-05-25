@@ -1,0 +1,284 @@
+.wrapper {
+    width: 100%;
+    max-width: 1440px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.hrContainer {
+    width: 100%;
+    padding: 0;
+    display: block;
+}
+
+.hr {
+    width: 95%;
+    height: 1px;
+    margin: 0 auto;
+    border: 0;
+    background-color: #EAE0D8;
+}
+
+.titleContainer {
+    width: 100%;
+    height: auto;
+    margin: 60px auto 0;
+}
+
+.title {
+    width: 100%;
+    height: auto;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    max-width: 1216px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.header {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.descrContainer {
+    width: 73%;
+    height: auto;
+    margin: 140px 0 0 0;
+}
+
+.firstDescr {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 0 0 30px 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    color: #8C8C8C;
+    line-height: 28.5px;
+}
+
+.secondDescr {
+    display: block;
+    width: 100%;
+    height: auto;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    color: #8C8C8C;
+    line-height: 28.5px;
+}
+
+.firstImgsContainer {
+    width: 100%;
+    height: auto;
+    margin: 50px 0 0 50px;
+    display: flex;
+}
+
+.mainImgContainer {
+    width: 401px;
+    height: 476px;
+}
+
+.mainImg {
+    width: 100%;
+    height: auto;
+}
+
+.secondImg {
+    width: 186px;
+    height: 187px;
+    margin: 236px 0 0 20px;
+}
+
+.philSec {
+    width: 100%;
+    height: auto;
+}
+
+.philSecTitleContainer {
+    width: 100%;
+    height: auto;
+}
+
+.philTitle {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 130px 0 0 0;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 36px;
+}
+
+.seconDescrContainer {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.secondContainer {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.cutleryImgContainer {
+    width: 392px;
+    height: 410px;
+    margin: 70px 0 0 0;
+}
+
+.cutleryImg {
+    width: 100%;
+    height: auto;
+}
+
+.secondDescrContainer {
+    width: 40%;
+    height: auto;
+    margin: 129px 0 0 141px;
+}
+
+.thirdDescr {
+    display: block;
+    width: 100%;
+    padding: 0 0 30px 0;
+    height: auto;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    color: #8C8C8C;
+    line-height: 28.5px;
+}
+
+.fourthDescr {
+    display: block;
+    width: 100%;
+    height: auto;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    color: #8C8C8C;
+    line-height: 28.5px;
+}
+
+@media screen and (max-width: 1281px) {
+    .secondImg {
+        display: none;
+    }
+
+    .firstImgsContainer {
+        width: 88%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    .firstImgsContainer {
+        width: 100%;
+        height: auto;
+        margin: 50px 0 0 40px;
+    }
+
+    .descrContainer {
+        margin: 70px 0 0 20px;
+    }
+
+    .philSecTitleContainer {
+        text-align: center;
+    }
+    
+    .secondDescrContainer {
+        margin: 90px auto 0;
+    }
+
+    .cutleryImgContainer {
+        width: 392px;
+        height: 410px;
+        margin: 70px 0 0 113px;
+    }
+
+    .cutleryImgContainer {
+        width: 392px;
+        height: 410px;
+        margin: 70px 0 0 0;
+    
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .titleContainer {
+        width: 100%;
+        height: auto;
+        margin: 60px auto 0;
+    }
+    
+    .title {
+        width: 100%;
+        height: auto;
+        text-transform: uppercase;
+        font-size: 36px;
+        font-weight: 400;
+        text-align: center;
+    }
+    
+    .header {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .firstImgsContainer {
+        width: 401px;
+        height: auto;
+        margin: 0;
+        order: 1;
+    }
+
+    .mainImgContainer {
+        width: auto;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .descrContainer {
+        min-width: 10px;
+        margin: 50px 0 0 0;
+        text-align: center;
+        order: 2;
+    }
+
+    .secondContainer {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .cutleryImgContainer {
+        height: auto;
+        margin: 70px auto 0;
+    }
+
+    .cutleryImg {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .secondDescrContainer {
+        width: 73%;
+        margin: 40px auto 0;
+        text-align: center;
+    }
+}

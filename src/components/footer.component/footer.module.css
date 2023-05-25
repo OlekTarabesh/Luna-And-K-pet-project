@@ -1,0 +1,289 @@
+.wrapper {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1216px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hrContainer {
+    width: 100%;
+    height: 1px;
+    margin: 131px 0 0 0;
+    padding: 0;
+    display: inline;
+}
+
+.hr {
+    width: 95%;
+    height: 1px;
+    margin: 0 auto;
+    border: 0;
+    background-color: #EAE0D8;
+}
+
+.content {
+    width: 100%;
+    height: auto;
+    margin: 67px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logoContainer {
+    width: 109px;
+    height: auto;
+    margin: 0 15px 0 0;
+}
+
+.logo {
+    width: 100%;
+    height: auto;
+}
+
+.catalogContainer {
+    width: 104px;
+    height: 216px;
+    margin: 0 251px 0 0;
+}
+
+.catalog {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+}
+
+.catalogTitle {
+    width: auto;
+    height: auto;
+    margin-bottom: 28px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.item {
+    width: auto;
+    height: auto;
+    margin-bottom: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    color: #6F6663;
+    cursor: pointer;
+}
+
+.item:hover {
+    text-decoration: underline;
+}
+.infoContainer {
+    width: auto;
+    height: auto;
+    margin: 0 177px 0 0;
+}
+
+.info {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+}
+
+.infoTitle {
+    width: auto;
+    height: auto;
+    margin-bottom: 28px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.infoItem {
+    width: auto;
+    height: auto;
+    margin-bottom: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    color: #6F6663;
+    cursor: pointer;
+}
+.infoItem:hover {
+    text-decoration: underline;
+}
+
+.contactsContainer {
+    width: auto;
+    height: auto;
+}
+
+.contacts {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contactsTitle {
+    width: 76px;
+    height: 23px;
+    margin-bottom: 28px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.contactsItem {
+    width: 165px;
+    height: auto;
+    margin-bottom: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    color: #6F6663;
+    cursor: pointer;
+}
+.contactsItem:hover {
+    text-decoration: underline;
+}
+
+.iconsContainer {
+    width: 150px;
+    height: 29px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.icons {
+    display: block;
+    width: 29px;
+    height: 29px;
+    cursor: pointer;
+}
+.icons:hover {
+    opacity: 0.5;
+}
+
+.starIcon {
+    position: absolute;
+    top: 317px;
+    left: 1326px;
+}
+
+@media screen and (max-width: 1440px) {
+    .container {
+        justify-content: center;
+    }
+
+    .logoContainer {
+        margin: 0 153px 0 0;
+    }
+
+    .catalogContainer {
+        margin: 0 231px 0 0;
+    }
+
+    .contactsContainer {
+        margin: 0 0 0 0;   
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    .logoContainer {
+        margin: 0 25px 0 0;
+    }
+
+    .catalogContainer {
+        margin: 0 100px 0 0;
+    }
+
+    .infoContainer {
+        margin: 0 80px 0 0;
+    }
+
+    .contactsContainer {
+        margin: 0 50px 0 0;   
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    } 
+
+    .catalogContainer {
+        width: auto;
+        order: 4;
+        margin: 0 auto;
+    }
+
+    .infoContainer {
+        width: auto;
+        margin: 0 auto;
+        order: 5;
+    }
+
+    .logoContainer {
+        width: 100%;
+        height: 20px;
+        order: 1;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .contactsContainer {
+        width: 100%;
+        margin: 40px 5px 0 0;
+        display: flex;
+        flex-direction: column;
+        order: 2;
+    }
+    .contactsTitle {
+        display: none;
+    }
+
+    .iconsContainer {
+        margin: 0 auto 18px;
+        order: 1; 
+    }
+
+    .contacts {
+        width: 164px;
+        margin: 0 auto;
+        text-align: center;
+        order: 2;
+    }
+}
+
+
+@media screen and (max-width: 340px) {
+    .catalogContainer {
+        width: 100%;
+        margin: 25px auto 0;
+        text-align: center;
+    }
+
+    .infoContainer {
+        width: 100%;
+        margin: 25px auto 0;
+        text-align: center;
+    }
+}

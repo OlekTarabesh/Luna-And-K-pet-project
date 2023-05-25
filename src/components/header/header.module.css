@@ -1,0 +1,261 @@
+.wrapper {
+    position: relative;
+    max-width: 100%;
+    height: 597px;
+    display: flex;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    margin: 46px 0 0 0;
+    display: flex;
+}
+
+.titleAndBtnBlock {
+    width: 381px;
+    height: auto;
+    padding: 0 15px 0 0;
+}
+
+.title {
+    width: 100%;
+    height: auto;
+    padding: 85px 0 0 0;
+    font-weight: 400;
+    font-size: 36px;
+    font-family: 'Cinzel', serif;
+    font-weight: 300;
+    line-height: 50px;
+}
+
+.ellipseBtn {
+    width: 231px;
+    height: auto;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: all .1s ease-in-out;
+}
+.ellipseBtn:hover {
+    transform: scale(1.05);
+}
+
+.ellipseBtnImage {
+    width: 100%;
+    height: auto;
+    padding: 41px 0 0 0;
+}
+
+.mainImageContainer {
+    width: 455px;
+    height: 540px;  
+}
+
+.mainImage {
+    width: 100%;
+    height: auto;
+}
+
+.sideImageContainer {
+    width: 289px;
+    height: 292px;
+}
+
+.sideImage {
+    display: block;
+    width: 289px;
+    height: auto;
+    padding: 166px 0 0 0;
+    margin-left: -53px;
+}
+
+.headerEllipseContainer {
+    display: block;
+    margin-left: 115px;
+    width: 226px;
+    height: 87px;
+    align-items: center;
+}
+
+.headerEllipse {
+    position: absolute;
+    top: 426px;
+    left: 112px;
+    width: 226px;
+    height: 87px;
+}
+
+.ellipseText {
+    width: 193px;
+    height: 24px;
+    position: absolute;
+    top: 460px;
+    left: 129px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 19px;
+    color: #6F6663;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: 1600px) {
+    .wrapper {
+        position: relative;
+        width: 100%;
+        min-width: 1600px;
+        height: 680px;
+        display: flex;
+    }
+
+    .container {
+        margin: 52px auto;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    .container {
+        margin: 57px 0 0 0px;
+    }
+
+    .sideImageContainer {
+        display: none;
+    }
+
+    .titleAndBtnBlock {
+        width: 350px;
+        height: auto;
+        padding: 0 15px 0 20px;
+    }
+    
+    .mainImageContainer {
+        margin: 0 auto;  
+    }
+
+}
+
+@media screen and (max-width: 769px) {
+    .wrapper {
+        height: fit-content;
+    }
+    .container {
+        height: 923px;
+        flex-wrap: wrap;
+        margin: 15px 0 0 0;
+    }
+
+    .mainImageContainer {
+        order: 1;
+    }
+
+    .titleAndBtnBlock {
+        order: 2;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .title {
+        margin: 0 auto;
+        text-align: center;
+        padding: 50px 0 0 0;
+    }
+
+    .ellipseBtn {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .ellipseBtnImage {
+        padding: 45px 0 0 0;
+    }
+}
+
+
+@media screen and (max-width: 481px) {
+    .container {
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+        margin: 15px 0 0 0;
+    }
+
+    .mainImageContainer {
+        width: 327px;
+        height: 390px;
+        text-align: center;
+    }
+
+    .mainImage {
+        width: 327px;
+    }
+
+    .titleAndBtnBlock {
+        width: 100%;
+        height: auto;
+    }
+
+    .title {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        text-align: center;
+        padding: 50px 0 0 0;
+    }
+
+    .ellipseBtn {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .ellipseBtnImage {
+        width: 226px;
+        height: auto;
+        padding: 45px 0 0 0;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .container {
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+        margin: 15px 0 0 0;
+    }
+
+    .mainImageContainer {
+        width: 250px;
+        height: auto;
+        text-align: center;
+    }
+
+    .mainImage {
+        width: 100%;
+    }
+
+    .titleAndBtnBlock {
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+
+    .title {
+        width: 100%;
+        height: auto;
+        font-size: 30px;
+    }
+
+    .ellipseBtn {
+        width: 100%;
+        height: auto;
+    }
+
+    .ellipseBtnImage {
+        width: 226px;
+        height: auto;
+    }
+}
+

@@ -1,0 +1,23 @@
+.filterContainer {
+    width: 108px;
+    height: 24px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filter {
+    width: 100%;
+    height: auto;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.filterArrow {
+    width: 21px;
+    margin-left: 21px;
+    cursor: pointer;
+}

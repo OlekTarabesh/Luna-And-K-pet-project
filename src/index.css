@@ -1,9 +1,17 @@
-html body {
-  display: block;
-  width: 100%;
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: #FCF7F3;
 }
 
+body, html {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #FCF7F3;
+  font-family: 'Cinzel', serif;
+  color: #161616;
+}
 
+#root {
+  background-image: url('./images/bg-noise.png');
+}
