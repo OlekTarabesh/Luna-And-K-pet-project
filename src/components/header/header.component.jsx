@@ -5,8 +5,6 @@ const Header = () => {
     
     return (
         <div className="header-wrapper">
-            <Navbar />
-            <svg className="star-svg" />
         </div>
     )
 }
