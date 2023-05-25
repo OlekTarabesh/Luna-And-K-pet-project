@@ -55,19 +55,19 @@ const Footer = () => {
                         <div className={styled.iconsContainer}>
                             <span 
                                 className={styled.icons}>
-                                    <a href='https://www.instagram.com/aleksandrjazz/'>
+                                    <a href='https://www.instagram.com/oleksandrtarabesh_/'>
                                             <Instagram />
                                     </a>
                             </span>
                             <span 
                                 className={styled.icons}>
-                                    <a href='https://www.facebook.com/profile.php?id=100006613427648'>
+                                    <a href='https://www.facebook.com/alexshaidy'>
                                             <Facebook />
                                     </a>
                             </span>
                             <span 
                                 className={styled.icons}>
-                                    <a href='https://t.me/FancyMakar'>
+                                    <a href='https://t.me/ol_ek_s'>
                                             <Telegram />
                                     </a>
                             </span>
