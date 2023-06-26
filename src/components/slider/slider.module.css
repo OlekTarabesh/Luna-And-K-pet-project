@@ -141,116 +141,148 @@
     }
 }
 
-@media screen and (max-width: 1102px) {
+@media screen and (max-width: 1110px) {
     .sliderWrapper {
-        width: 91%;
+        width: fit-content;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .sliderView {
+        width: 100%;
+        height: auto;
+    }
+
+    .sliderView {
+        width: 500px;
+        height: auto;
     }
 
     .productContainer {
-        width: 390px;
+        width: 500px;
     }
+
     .card {
         width: 100%;
         height: auto;
-        margin: 0 0px 0 76px;
+        margin: 0 70px 0 0px;
         cursor: pointer;
+        text-align: center;
         transition: all .1s ease-in-out;
     }
 
-    .sliderView {
-        width: 815px;
-        height: auto;
-        /* max-width: 1140px; */
-    }
-}
-
-@media screen and (max-width: 1102px) {
-    .sliderWrapper {
-        width: 73%;
-    }
-
-    .sliderView {
-        width: 100%;
+    .imageContainer {
+        width: auto;
         height: auto;
     }
-
-    .card {
-        margin: 0 0px 0 70px;
+    
+    .image {
+        width: 430px;
+        height: auto;
     }
 }
 
 @media screen and (max-width: 769px) {
-    
-    .wrapper {
-        margin-top: 70px;
-    }
-
     .titleContainer {
-        width: 145px;
-        height: 35px;
-        margin: 0 auto 30px;
-    }
-    
-    .buttonContainer {
-        margin: 30px auto 0;
-        display: flex;
-        justify-content: center;
-        
-    }
-
-    .sliderView {
-        width: 815px;
-        height: auto;
-    }
-
-    .card {
-        width: 70%;
-        height: auto;
-        /* margin-right: 20px; */
-    }
-}
-
-@media screen and (max-width: 481px) {
-    .wrapper {
-        margin-top: 202px;
-    }
-
-    .titleContainer {
-        width: 145px;
-        height: 35px;
-        margin: 0 auto 30px;
+        margin: 0 auto;
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    .sliderWrapper {
-        height: 457px;
+    .buttonContainer {
+        margin: 50px 0 0 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
+    .productContainer {
+        margin: 0 auto;
+    }
+    
+    .card {
+        margin: 0 38px 0 38px;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .sliderWrapper {
+        width: auto;
+    }
+    
     .sliderView {
         width: auto;
-        height: 457px;
-        margin: 0 14px;
     }
-
+    
     .productWrapper {
-        width: 100%;
+        width: auto;
+        height: auto;
+    }
+    
+    .productContainer {
+        width: 400px;
+        height: auto;
     }
 
     .card {
-        /* width: 100%;
-        height: auto; */
-        margin: 0;
+        width: auto;
+        margin: 0 auto;
     }
 
-    .image {
-        width: 470px;
-        height: 470px;
+    .imageContainer {
+        width: auto;
+        height: auto;
     }
 
-    .buttonWrapper {
+    .image{
+        width: 400px;
+        height: auto;
+    }
+
+}
+
+@media screen and (max-width: 420px) {
+    .sliderWrapper {
+        width: 100%;
+    }
+    
+    .sliderView {
+        width: 100%;
+    }
+    
+    .productWrapper {
+        width: 100%;
+        height: auto;
+    }
+    
+    .productContainer {
+        width: 100%;
+        height: auto;
+    }
+
+    .card {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .imageContainer {
+        width: auto;
+        height: auto;
+    }
+
+    .image{
+        width: 400px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 339px) {
+    .wrapper {
         display: none;
     }
 
+    .sliderWrapper {
+        display: none;
+    }
 }
