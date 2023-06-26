@@ -15,9 +15,9 @@ const MainPage = () => {
             <div className={styled.content}>
                 <Header />
                 <Slider />
-                {/* <Philosophy /> */}
-                {/* <DishesCategory /> */}
-                {/* <FollowUsOnInstagram /> */}
+                <Philosophy />
+                <DishesCategory />
+                <FollowUsOnInstagram />
                 <Footer />
             </div>
         </div>
