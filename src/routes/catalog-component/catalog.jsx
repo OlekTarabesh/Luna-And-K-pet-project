@@ -70,7 +70,7 @@ const Catalog = () => {
                 </div>
                         <div className={styled.buttonContainer}>
                             <ArrowLeftBtn />
-                            1   2  ...   3   4
+                                1
                             <ArrowRightBtn />
                         </div>
             </div>
