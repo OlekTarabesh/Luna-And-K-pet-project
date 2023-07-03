@@ -6,7 +6,7 @@ import styled from './category.module.css';
 import DropdownCategory from "./dropdown/category-drop";
 
 
-const Category = ({onClick}) => {
+const Category = () => {
     const [ clicked, setClicked ] = useState(false);
 
     const showDropdown = () => {

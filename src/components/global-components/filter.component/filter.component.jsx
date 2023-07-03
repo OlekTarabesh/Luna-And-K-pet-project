@@ -5,7 +5,7 @@ import FilterDrop from "./dropdown/filter-drop";
 
 import styled from './filter.module.css';
 
-const Filter = ({onClick}) => {
+const Filter = () => {
     const [ clicked, setClicked ] = useState(false);
 
     const showDropdown = () => {

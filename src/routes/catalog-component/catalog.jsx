@@ -40,13 +40,13 @@ const Catalog = () => {
 
             <div className={styled.titleContainer}>
                 <div className={styled.filter}>
-                    <Filter onClick={() => {}} />
+                    <Filter />
                 </div>
 
                 <div className={styled.title}>catalog</div>
 
                 <div className={styled.categories}>
-                    <Category onClick={() => {}}/>
+                    <Category />
                 </div>
             </div>
 
