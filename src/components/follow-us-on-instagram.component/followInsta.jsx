@@ -11,7 +11,7 @@ const FollowUsOnInstagram = () => {
                 <div className={styled.titleAndLink}>
                 <span className={styled.title}>follow us on instagram</span> 
                     <a 
-                        href='https://www.instagram.com/aleksandrjazz/' 
+                        href='https://www.instagram.com/oleksandrtarabesh_/' 
                         className={styled.linkOfInstagram}>
 
                         Follow @lunaofficial
