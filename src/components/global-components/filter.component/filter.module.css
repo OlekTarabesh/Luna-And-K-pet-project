@@ -21,3 +21,7 @@
     margin-left: 21px;
     cursor: pointer;
 }
+
+.filterContainer:hover {
+    opacity: 0.5;
+}
