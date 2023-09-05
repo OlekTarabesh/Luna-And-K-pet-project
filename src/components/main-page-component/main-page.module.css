@@ -1,13 +1,13 @@
 .mainPage {
-    display: block;
-    width: 100%;
-    max-width: 1440px;
-    height: 100%;
-    margin: 0 auto;
+  display: block;
+  width: 100%;
+  max-width: 1440px;
+  height: 100%;
+  margin: 0 auto;
 }
 
 .content {
-    max-width: 1216px;
-    margin: 0 auto;
-    padding: 10px;
+  max-width: 1216px;
+  margin: 0 auto;
+  padding: 10px;
 }

@@ -1,19 +1,17 @@
-
-
 export const dishesCategory = [
-    {
-        item: 'Plates'
-    },
-    {
-        item: 'Forks'
-    },
-    {
-        item: 'Spoons'
-    },
-    {
-        item: 'Napkins'
-    },
-    {
-        item: 'Cups/glasses'
-    },
-] 
+  {
+    item: "Plates",
+  },
+  {
+    item: "Forks",
+  },
+  {
+    item: "Spoons",
+  },
+  {
+    item: "Napkins",
+  },
+  {
+    item: "Cups/glasses",
+  },
+];

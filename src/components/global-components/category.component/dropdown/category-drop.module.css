@@ -1,28 +1,28 @@
 .wrapper {
-    position: absolute;
-    width: 514px;
-    height: 525px;    
-    right: 1px;
+  position: absolute;
+  width: 514px;
+  height: 525px;
+  right: 1px;
 }
 
 .container {
-    position: absolute;
-    width: 250px;
-    height: auto;
-    right: 30px;
-    background-color: #FCF7F3;
-    border: 1px solid #161616;
-    color: #161616;
+  position: absolute;
+  width: 250px;
+  height: auto;
+  right: 30px;
+  background-color: #fcf7f3;
+  border: 1px solid #161616;
+  color: #161616;
 }
 
 .uList {
-    width: auto;
-    height: auto;
-    list-style-type: none;
-    cursor: pointer;
-    text-indent: 5px;
+  width: auto;
+  height: auto;
+  list-style-type: none;
+  cursor: pointer;
+  text-indent: 5px;
 }
 
 .uList:hover {
-    background-color: #EBDDD7;
+  background-color: #ebddd7;
 }

@@ -4,14 +4,15 @@
   padding: 0;
 }
 
-body, html {
+body,
+html {
   width: 100%;
   min-height: 100vh;
-  background-color: #FCF7F3;
-  font-family: 'Cinzel', serif;
+  background-color: #fcf7f3;
+  font-family: "Cinzel", serif;
   color: #161616;
 }
 
 #root {
-  background-image: url('./images/bg-noise.png');
+  background-image: url("./images/bg-noise.png");
 }

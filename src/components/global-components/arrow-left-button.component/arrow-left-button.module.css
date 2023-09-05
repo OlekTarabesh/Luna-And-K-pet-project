@@ -1,13 +1,13 @@
 .arrowLeftBtn {
-    width: 51px;
-    height: 41px;
-    margin-right: 30px;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    transform: all .1s ease-in-out;
+  width: 51px;
+  height: 41px;
+  margin-right: 30px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transform: all 0.1s ease-in-out;
 }
 
 .arrowLeftBtn:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }

@@ -1,288 +1,285 @@
 .wrapper {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .titleContainer {
-    width: 300px;
-    height: 130px;
-    display: flex;
+  width: 300px;
+  height: 130px;
+  display: flex;
 }
 
 .title {
-    align-self: last baseline;
-    font-family: 'Cizel' serif;
-    font-weight: 400;
-    font-size: 24px;
-    color: #161616;
-    text-transform: uppercase;
+  align-self: last baseline;
+  font-family: "Cizel" serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #161616;
+  text-transform: uppercase;
 }
 
 .buttonWrapper {
-    width: 100%;
-    height: 41px;
-    margin: 0 0 75px 0;
-    display: flex;
-    justify-content: center;
+  width: 100%;
+  height: 41px;
+  margin: 0 0 75px 0;
+  display: flex;
+  justify-content: center;
 }
 
 .buttonContainer {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: flex-end;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-end;
 }
 
 /* ================================ */
 .sliderWrapper {
+  width: 100%;
+  height: 433px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sliderView {
+  width: 100%;
+  max-width: 1140px;
+  height: 433px;
+  display: flex;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+.productWrapper {
+  width: 289px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.productContainer {
+  width: 400px;
+  height: auto;
+  margin: 5px 5px 0 5px;
+  display: flex;
+  justify-content: space-between;
+  transition: all 1s ease-in-out;
+}
+
+.card {
+  width: 100%;
+  height: auto;
+  margin: 0 112px 0 0;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card:last-child {
+  margin-right: 0;
+}
+
+.imageContainer {
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+
+.image {
+  width: 292px;
+  height: 280px;
+  object-fit: cover;
+}
+
+.productName {
+  display: block;
+  height: 24px;
+  margin-top: 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 19px;
+  color: #8c8c8c;
+}
+.productName:hover {
+  text-decoration: underline;
+}
+
+.price {
+  display: block;
+  margin-top: 10px;
+  font-family: "Rubik", sans-serif;
+  font-size: 15px;
+  color: black;
+}
+
+@media screen and (max-width: 1281px) {
+  .sliderView {
     width: 100%;
-    height: 433px;
+  }
+
+  .productWrapper {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .productContainer {
+    width: calc(430px - 46px);
+  }
+
+  .card {
+    width: 100%;
+    height: auto;
+    margin: 0 100px 0 0;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+  }
+}
+
+@media screen and (max-width: 1110px) {
+  .sliderWrapper {
+    width: fit-content;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .sliderView {
+    width: 100%;
+    height: auto;
+  }
+
+  .sliderView {
+    width: 500px;
+    height: auto;
+  }
+
+  .productContainer {
+    width: 500px;
+  }
+
+  .card {
+    width: 100%;
+    height: auto;
+    margin: 0 70px 0 0px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.1s ease-in-out;
+  }
+
+  .imageContainer {
+    width: auto;
+    height: auto;
+  }
+
+  .image {
+    width: 430px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .titleContainer {
     margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
-}
+  }
 
-.sliderView {
-    width: 100%;
-    max-width: 1140px;
-    height: 433px;
+  .buttonContainer {
+    margin: 50px 0 0 0;
     display: flex;
-    justify-content: flex-start;
-    /* margin: 0 auto; */
-    overflow:hidden;
-}
+    justify-content: center;
+    align-items: center;
+  }
 
-.productWrapper {
-    width: 289px;
-    height: auto;
+  .productContainer {
     margin: 0 auto;
-}
+  }
 
-.productContainer {
-    width: 400px;
-    /* width: 410px; */
-    height: auto;
-    margin: 5px 5px 0 5px;
-    display: flex;
-    justify-content: space-between;
-    transition: all 1s ease-in-out;
-}
-
-.card {
-    width: 100%;
-    height: auto;
-    margin: 0 112px 0 0;
-    cursor: pointer;
-    transition: all .1s ease-in-out;
-}
-.card:hover {
-    transform: scale(1.03);
-}
-
-.card:last-child {
-    margin-right: 0;
-}
-
-.imageContainer {
-    width: 100%;
-    height: auto;
-    display: flex;
-}
-
-.image {
-    width: 292px;
-    height: 280px;
-    object-fit: cover;
-}
-
-.productName {
-    display: block;
-    height: 24px;
-    margin-top: 15px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    font-size: 19px;
-    color: #8C8C8C;
-}
-.productName:hover {
-    text-decoration: underline;
-}
-
-.price {
-    display: block;
-    margin-top: 10px;
-    font-family: 'Rubik', sans-serif;
-    font-size: 15px;
-    color:black;
-}
-
-@media screen and (max-width: 1281px) {
-    .sliderView {
-        width: 100%;
-    }
-
-    .productWrapper {
-        width: 100%;
-        height: auto;
-        margin: 0 auto;
-    }
-
-    .productContainer {
-        width: calc(430px - 46px);
-    }
-    
-    .card {
-        width: 100%;
-        height: auto;
-        margin: 0 100px 0 0;
-        cursor: pointer;
-        transition: all .1s ease-in-out;
-    }
-}
-
-@media screen and (max-width: 1110px) {
-    .sliderWrapper {
-        width: fit-content;
-        height: auto;
-        margin: 0 auto;
-    }
-
-    .sliderView {
-        width: 100%;
-        height: auto;
-    }
-
-    .sliderView {
-        width: 500px;
-        height: auto;
-    }
-
-    .productContainer {
-        width: 500px;
-    }
-
-    .card {
-        width: 100%;
-        height: auto;
-        margin: 0 70px 0 0px;
-        cursor: pointer;
-        text-align: center;
-        transition: all .1s ease-in-out;
-    }
-
-    .imageContainer {
-        width: auto;
-        height: auto;
-    }
-    
-    .image {
-        width: 430px;
-        height: auto;
-    }
-}
-
-@media screen and (max-width: 769px) {
-    .titleContainer {
-        margin: 0 auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .buttonContainer {
-        margin: 50px 0 0 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .productContainer {
-        margin: 0 auto;
-    }
-    
-    .card {
-        margin: 0 38px 0 38px;
-    }
+  .card {
+    margin: 0 38px 0 38px;
+  }
 }
 
 @media screen and (max-width: 510px) {
-    .sliderWrapper {
-        width: auto;
-    }
-    
-    .sliderView {
-        width: auto;
-    }
-    
-    .productWrapper {
-        width: auto;
-        height: auto;
-    }
-    
-    .productContainer {
-        width: 400px;
-        height: auto;
-    }
+  .sliderWrapper {
+    width: auto;
+  }
 
-    .card {
-        width: auto;
-        margin: 0 auto;
-    }
+  .sliderView {
+    width: auto;
+  }
 
-    .imageContainer {
-        width: auto;
-        height: auto;
-    }
+  .productWrapper {
+    width: auto;
+    height: auto;
+  }
 
-    .image{
-        width: 400px;
-        height: auto;
-    }
+  .productContainer {
+    width: 400px;
+    height: auto;
+  }
 
+  .card {
+    width: auto;
+    margin: 0 auto;
+  }
+
+  .imageContainer {
+    width: auto;
+    height: auto;
+  }
+
+  .image {
+    width: 400px;
+    height: auto;
+  }
 }
 
 @media screen and (max-width: 420px) {
-    .sliderWrapper {
-        width: 100%;
-    }
-    
-    .sliderView {
-        width: 100%;
-    }
-    
-    .productWrapper {
-        width: 100%;
-        height: auto;
-    }
-    
-    .productContainer {
-        width: 100%;
-        height: auto;
-    }
+  .sliderWrapper {
+    width: 100%;
+  }
 
-    .card {
-        width: 100%;
-        margin: 0 auto;
-    }
+  .sliderView {
+    width: 100%;
+  }
 
-    .imageContainer {
-        width: auto;
-        height: auto;
-    }
+  .productWrapper {
+    width: 100%;
+    height: auto;
+  }
 
-    .image{
-        width: 400px;
-        height: auto;
-    }
+  .productContainer {
+    width: 100%;
+    height: auto;
+  }
+
+  .card {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .imageContainer {
+    width: auto;
+    height: auto;
+  }
+
+  .image {
+    width: 400px;
+    height: auto;
+  }
 }
 
 @media screen and (max-width: 339px) {
-    .wrapper {
-        display: none;
-    }
+  .wrapper {
+    display: none;
+  }
 
-    .sliderWrapper {
-        display: none;
-    }
+  .sliderWrapper {
+    display: none;
+  }
 }
